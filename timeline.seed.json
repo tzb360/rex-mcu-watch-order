@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-11-08.1",
+  "sourcePublishedAt": "2026-10-22",
+  "updatedAt": "2026-11-08T00:00:00Z",
+  "metadataStatus": "requires-live-resolution",
+  "entries": [
+    {
+      "stableId": "mcu-eyes-of-wakanda-s1",
+      "title": "瓦坎达之眼",
+      "originalTitle": "Eyes of Wakanda",
+      "mediaType": "tv",
+      "searchYear": 2025,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 10,
+      "timelineEra": "官方完整时间线第1位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 1
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Eyes of Wakanda"
+    },
+    {
+      "stableId": "mcu-captain-america-the-first-avenger",
+      "title": "美国队长",
+      "originalTitle": "Captain America: The First Avenger",
+      "mediaType": "movie",
+      "searchYear": 2011,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 20,
+      "timelineEra": "官方完整时间线第2位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 2
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Captain America: The First Avenger"
+    },
+    {
+      "stableId": "mcu-marvel-studios-one-shot-agent-carter",
+      "title": "探员卡特",
+      "originalTitle": "Marvel Studios One Shot: Agent Carter",
+      "mediaType": "movie",
+      "searchYear": 2013,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 30,
+      "timelineEra": "官方完整时间线第3位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 3
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Marvel Studios One Shot: Agent Carter",
+      "searchAliases": [
+        "Marvel One-Shot: Agent Carter"
+      ]
+    },
+    {
+      "stableId": "mcu-captain-marvel",
+      "title": "惊奇队长",
+      "originalTitle": "Captain Marvel",
+      "mediaType": "movie",
+      "searchYear": 2019,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 40,
+      "timelineEra": "官方完整时间线第4位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 4
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Captain Marvel"
+    },
+    {
+      "stableId": "mcu-iron-man",
+      "title": "钢铁侠",
+      "originalTitle": "Iron Man",
+      "mediaType": "movie",
+      "searchYear": 2008,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 50,
+      "timelineEra": "官方完整时间线第5位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 5
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Iron Man"
+    },
+    {
+      "stableId": "mcu-iron-man-2",
+      "title": "钢铁侠2",
+      "originalTitle": "Iron Man 2",
+      "mediaType": "movie",
+      "searchYear": 2010,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 60,
+      "timelineEra": "官方完整时间线第6位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 6
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Iron Man 2"
+    },
+    {
+      "stableId": "mcu-the-incredible-hulk",
+      "title": "无敌浩克",
+      "originalTitle": "The Incredible Hulk",
+      "mediaType": "movie",
+      "searchYear": 2008,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 70,
+      "timelineEra": "官方完整时间线第7位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 7
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Incredible Hulk"
+    },
+    {
+      "stableId": "mcu-marvel-studios-one-shot-a-funny-thing-happened-on-the-way-to-thor-s-hammer",
+      "title": "寻找雷神锤子路上发生的趣事",
+      "originalTitle": "Marvel Studios One Shot: A Funny Thing Happened on the Way to Thor’s Hammer",
+      "mediaType": "movie",
+      "searchYear": 2011,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 80,
+      "timelineEra": "官方完整时间线第8位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 8
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Marvel Studios One Shot: A Funny Thing Happened on the Way to Thor’s Hammer",
+      "searchAliases": [
+        "Marvel One-Shot: A Funny Thing Happened on the Way to Thor’s Hammer"
+      ]
+    },
+    {
+      "stableId": "mcu-thor",
+      "title": "雷神",
+      "originalTitle": "Thor",
+      "mediaType": "movie",
+      "searchYear": 2011,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 90,
+      "timelineEra": "官方完整时间线第9位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 9
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Thor"
+    },
+    {
+      "stableId": "mcu-marvel-studios-one-shot-the-consultant",
+      "title": "顾问",
+      "originalTitle": "Marvel Studios One Shot: The Consultant",
+      "mediaType": "movie",
+      "searchYear": 2011,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 100,
+      "timelineEra": "官方完整时间线第10位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 10
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Marvel Studios One Shot: The Consultant",
+      "searchAliases": [
+        "Marvel One-Shot: The Consultant"
+      ]
+    },
+    {
+      "stableId": "mcu-the-avengers",
+      "title": "复仇者联盟",
+      "originalTitle": "The Avengers",
+      "mediaType": "movie",
+      "searchYear": 2012,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 110,
+      "timelineEra": "官方完整时间线第11位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 11
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Avengers"
+    },
+    {
+      "stableId": "mcu-marvel-studios-one-shot-item-47",
+      "title": "47号物品",
+      "originalTitle": "Marvel Studios One Shot: Item 47",
+      "mediaType": "movie",
+      "searchYear": 2012,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 120,
+      "timelineEra": "官方完整时间线第12位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 12
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Marvel Studios One Shot: Item 47",
+      "searchAliases": [
+        "Marvel One-Shot: Item 47"
+      ]
+    },
+    {
+      "stableId": "mcu-thor-the-dark-world",
+      "title": "雷神2：黑暗世界",
+      "originalTitle": "Thor: The Dark World",
+      "mediaType": "movie",
+      "searchYear": 2013,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 130,
+      "timelineEra": "官方完整时间线第13位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 13
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Thor: The Dark World"
+    },
+    {
+      "stableId": "mcu-iron-man-3",
+      "title": "钢铁侠3",
+      "originalTitle": "Iron Man 3",
+      "mediaType": "movie",
+      "searchYear": 2013,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 140,
+      "timelineEra": "官方完整时间线第14位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 14
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Iron Man 3"
+    },
+    {
+      "stableId": "mcu-marvel-studios-one-shot-all-hail-the-king",
+      "title": "王者万岁",
+      "originalTitle": "Marvel Studios One Shot: All Hail the King",
+      "mediaType": "movie",
+      "searchYear": 2014,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 150,
+      "timelineEra": "官方完整时间线第15位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 15
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Marvel Studios One Shot: All Hail the King",
+      "searchAliases": [
+        "Marvel One-Shot: All Hail the King"
+      ]
+    },
+    {
+      "stableId": "mcu-captain-america-the-winter-soldier",
+      "title": "美国队长2：冬日战士",
+      "originalTitle": "Captain America: The Winter Soldier",
+      "mediaType": "movie",
+      "searchYear": 2014,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 160,
+      "timelineEra": "官方完整时间线第16位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 16
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Captain America: The Winter Soldier"
+    },
+    {
+      "stableId": "mcu-guardians-of-the-galaxy",
+      "title": "银河护卫队",
+      "originalTitle": "Guardians of the Galaxy",
+      "mediaType": "movie",
+      "searchYear": 2014,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 170,
+      "timelineEra": "官方完整时间线第17位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 17
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Guardians of the Galaxy"
+    },
+    {
+      "stableId": "mcu-guardians-of-the-galaxy-vol-2",
+      "title": "银河护卫队2",
+      "originalTitle": "Guardians of the Galaxy Vol. 2",
+      "mediaType": "movie",
+      "searchYear": 2017,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 180,
+      "timelineEra": "官方完整时间线第18位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 18
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Guardians of the Galaxy Vol. 2"
+    },
+    {
+      "stableId": "mcu-i-am-groot-s1",
+      "title": "我是格鲁特",
+      "originalTitle": "I Am Groot",
+      "mediaType": "tv",
+      "searchYear": 2022,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 190,
+      "timelineEra": "官方完整时间线第19位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 19
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "I Am Groot S1"
+    },
+    {
+      "stableId": "mcu-i-am-groot-s2",
+      "title": "我是格鲁特",
+      "originalTitle": "I Am Groot",
+      "mediaType": "tv",
+      "searchYear": 2022,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 200,
+      "timelineEra": "官方完整时间线第20位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 20
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "I Am Groot S2"
+    },
+    {
+      "stableId": "mcu-daredevil-s1",
+      "title": "夜魔侠",
+      "originalTitle": "Daredevil",
+      "mediaType": "tv",
+      "searchYear": 2015,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 210,
+      "timelineEra": "官方完整时间线第21位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 21
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Daredevil S1",
+      "searchAliases": [
+        "Marvel's Daredevil"
+      ]
+    },
+    {
+      "stableId": "mcu-jessica-jones-s1",
+      "title": "杰西卡·琼斯",
+      "originalTitle": "Jessica Jones",
+      "mediaType": "tv",
+      "searchYear": 2015,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 220,
+      "timelineEra": "官方完整时间线第22位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 22
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Jessica Jones S1",
+      "searchAliases": [
+        "Marvel's Jessica Jones"
+      ]
+    },
+    {
+      "stableId": "mcu-avengers-age-of-ultron",
+      "title": "复仇者联盟2：奥创纪元",
+      "originalTitle": "Avengers: Age of Ultron",
+      "mediaType": "movie",
+      "searchYear": 2015,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 230,
+      "timelineEra": "官方完整时间线第23位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 23
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Avengers: Age of Ultron"
+    },
+    {
+      "stableId": "mcu-ant-man",
+      "title": "蚁人",
+      "originalTitle": "Ant-Man",
+      "mediaType": "movie",
+      "searchYear": 2015,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 240,
+      "timelineEra": "官方完整时间线第24位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 24
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Ant-Man"
+    },
+    {
+      "stableId": "mcu-daredevil-s2",
+      "title": "夜魔侠",
+      "originalTitle": "Daredevil",
+      "mediaType": "tv",
+      "searchYear": 2015,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 250,
+      "timelineEra": "官方完整时间线第25位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 25
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Daredevil S2",
+      "searchAliases": [
+        "Marvel's Daredevil"
+      ]
+    },
+    {
+      "stableId": "mcu-luke-cage-s1",
+      "title": "卢克·凯奇",
+      "originalTitle": "Luke Cage",
+      "mediaType": "tv",
+      "searchYear": 2016,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 260,
+      "timelineEra": "官方完整时间线第26位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 26
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Luke Cage S1",
+      "searchAliases": [
+        "Marvel's Luke Cage"
+      ]
+    },
+    {
+      "stableId": "mcu-iron-fist-s1",
+      "title": "铁拳",
+      "originalTitle": "Iron Fist",
+      "mediaType": "tv",
+      "searchYear": 2017,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 270,
+      "timelineEra": "官方完整时间线第27位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 27
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Iron Fist S1",
+      "searchAliases": [
+        "Marvel's Iron Fist"
+      ]
+    },
+    {
+      "stableId": "mcu-the-defenders-s1",
+      "title": "捍卫者联盟",
+      "originalTitle": "The Defenders",
+      "mediaType": "tv",
+      "searchYear": 2017,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 280,
+      "timelineEra": "官方完整时间线第28位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 28
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Defenders",
+      "searchAliases": [
+        "Marvel's Defenders"
+      ]
+    },
+    {
+      "stableId": "mcu-captain-america-civil-war",
+      "title": "美国队长3",
+      "originalTitle": "Captain America: Civil War",
+      "mediaType": "movie",
+      "searchYear": 2016,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 290,
+      "timelineEra": "官方完整时间线第29位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 29
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Captain America: Civil War"
+    },
+    {
+      "stableId": "mcu-black-widow",
+      "title": "黑寡妇",
+      "originalTitle": "Black Widow",
+      "mediaType": "movie",
+      "searchYear": 2021,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 300,
+      "timelineEra": "官方完整时间线第30位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 30
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Black Widow"
+    },
+    {
+      "stableId": "mcu-black-panther",
+      "title": "黑豹",
+      "originalTitle": "Black Panther",
+      "mediaType": "movie",
+      "searchYear": 2018,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 310,
+      "timelineEra": "官方完整时间线第31位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 31
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Black Panther"
+    },
+    {
+      "stableId": "mcu-spider-man-homecoming",
+      "title": "蜘蛛侠：英雄归来",
+      "originalTitle": "Spider-Man: Homecoming",
+      "mediaType": "movie",
+      "searchYear": 2017,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 320,
+      "timelineEra": "官方完整时间线第32位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 32
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Spider-Man: Homecoming"
+    },
+    {
+      "stableId": "mcu-the-punisher-s1",
+      "title": "惩罚者",
+      "originalTitle": "The Punisher",
+      "mediaType": "tv",
+      "searchYear": 2017,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 330,
+      "timelineEra": "官方完整时间线第33位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 33
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Punisher S1",
+      "searchAliases": [
+        "Marvel's Punisher"
+      ]
+    },
+    {
+      "stableId": "mcu-doctor-strange",
+      "title": "奇异博士",
+      "originalTitle": "Doctor Strange",
+      "mediaType": "movie",
+      "searchYear": 2016,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 340,
+      "timelineEra": "官方完整时间线第34位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 34
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Doctor Strange"
+    },
+    {
+      "stableId": "mcu-jessica-jones-s2",
+      "title": "杰西卡·琼斯",
+      "originalTitle": "Jessica Jones",
+      "mediaType": "tv",
+      "searchYear": 2015,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 350,
+      "timelineEra": "官方完整时间线第35位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 35
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Jessica Jones S2",
+      "searchAliases": [
+        "Marvel's Jessica Jones"
+      ]
+    },
+    {
+      "stableId": "mcu-luke-cage-s2",
+      "title": "卢克·凯奇",
+      "originalTitle": "Luke Cage",
+      "mediaType": "tv",
+      "searchYear": 2016,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 360,
+      "timelineEra": "官方完整时间线第36位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 36
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Luke Cage S2",
+      "searchAliases": [
+        "Marvel's Luke Cage"
+      ]
+    },
+    {
+      "stableId": "mcu-iron-fist-s2",
+      "title": "铁拳",
+      "originalTitle": "Iron Fist",
+      "mediaType": "tv",
+      "searchYear": 2017,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 370,
+      "timelineEra": "官方完整时间线第37位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 37
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Iron Fist S2",
+      "searchAliases": [
+        "Marvel's Iron Fist"
+      ]
+    },
+    {
+      "stableId": "mcu-daredevil-s3",
+      "title": "夜魔侠",
+      "originalTitle": "Daredevil",
+      "mediaType": "tv",
+      "searchYear": 2015,
+      "season": 3,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 380,
+      "timelineEra": "官方完整时间线第38位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 38
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Daredevil S3",
+      "searchAliases": [
+        "Marvel's Daredevil"
+      ]
+    },
+    {
+      "stableId": "mcu-thor-ragnarok",
+      "title": "雷神3：诸神黄昏",
+      "originalTitle": "Thor: Ragnarok",
+      "mediaType": "movie",
+      "searchYear": 2017,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 390,
+      "timelineEra": "官方完整时间线第39位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 39
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Thor: Ragnarok"
+    },
+    {
+      "stableId": "mcu-the-punisher-s2",
+      "title": "惩罚者",
+      "originalTitle": "The Punisher",
+      "mediaType": "tv",
+      "searchYear": 2017,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 400,
+      "timelineEra": "官方完整时间线第40位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 40
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Punisher S2",
+      "searchAliases": [
+        "Marvel's Punisher"
+      ]
+    },
+    {
+      "stableId": "mcu-jessica-jones-s3",
+      "title": "杰西卡·琼斯",
+      "originalTitle": "Jessica Jones",
+      "mediaType": "tv",
+      "searchYear": 2015,
+      "season": 3,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 410,
+      "timelineEra": "官方完整时间线第41位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 41
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Jessica Jones S3",
+      "searchAliases": [
+        "Marvel's Jessica Jones"
+      ]
+    },
+    {
+      "stableId": "mcu-ant-man-and-the-wasp",
+      "title": "蚁人2：黄蜂女现身",
+      "originalTitle": "Ant-Man and the Wasp",
+      "mediaType": "movie",
+      "searchYear": 2018,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 420,
+      "timelineEra": "官方完整时间线第42位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 42
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Ant-Man and the Wasp"
+    },
+    {
+      "stableId": "mcu-avengers-infinity-war",
+      "title": "复仇者联盟3：无限战争",
+      "originalTitle": "Avengers: Infinity War",
+      "mediaType": "movie",
+      "searchYear": 2018,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 430,
+      "timelineEra": "官方完整时间线第43位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 43
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Avengers: Infinity War"
+    },
+    {
+      "stableId": "mcu-avengers-endgame",
+      "title": "复仇者联盟4：终局之战",
+      "originalTitle": "Avengers: Endgame",
+      "mediaType": "movie",
+      "searchYear": 2019,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 440,
+      "timelineEra": "官方完整时间线第44位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 44
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Avengers: Endgame"
+    },
+    {
+      "stableId": "mcu-loki-s1",
+      "title": "洛基",
+      "originalTitle": "Loki",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 450,
+      "timelineEra": "官方完整时间线第45位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 45
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Loki S1"
+    },
+    {
+      "stableId": "mcu-what-if-s1",
+      "title": "假如…？",
+      "originalTitle": "What If…?",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 460,
+      "timelineEra": "官方完整时间线第46位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 46
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "What If…? S1"
+    },
+    {
+      "stableId": "mcu-marvel-zombies-s1",
+      "title": "漫威丧尸",
+      "originalTitle": "Marvel Zombies",
+      "mediaType": "tv",
+      "searchYear": 2025,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 470,
+      "timelineEra": "官方完整时间线第47位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 47
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Marvel Zombies"
+    },
+    {
+      "stableId": "mcu-wandavision-s1",
+      "title": "旺达幻视",
+      "originalTitle": "WandaVision",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 480,
+      "timelineEra": "官方完整时间线第48位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 48
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "WandaVision"
+    },
+    {
+      "stableId": "mcu-shang-chi-and-the-legend-of-the-ten-rings",
+      "title": "尚气与十环传奇",
+      "originalTitle": "Shang-Chi and the Legend of the Ten Rings",
+      "mediaType": "movie",
+      "searchYear": 2021,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 490,
+      "timelineEra": "官方完整时间线第49位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 49
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Shang-Chi and the Legend of the Ten Rings"
+    },
+    {
+      "stableId": "mcu-the-falcon-and-the-winter-soldier-s1",
+      "title": "猎鹰与冬兵",
+      "originalTitle": "The Falcon and the Winter Soldier",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 500,
+      "timelineEra": "官方完整时间线第50位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 50
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Falcon and the Winter Soldier"
+    },
+    {
+      "stableId": "mcu-spider-man-far-from-home",
+      "title": "蜘蛛侠：英雄远征",
+      "originalTitle": "Spider-Man: Far From Home",
+      "mediaType": "movie",
+      "searchYear": 2019,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 510,
+      "timelineEra": "官方完整时间线第51位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 51
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Spider-Man: Far From Home"
+    },
+    {
+      "stableId": "mcu-eternals",
+      "title": "永恒族",
+      "originalTitle": "Eternals",
+      "mediaType": "movie",
+      "searchYear": 2021,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 520,
+      "timelineEra": "官方完整时间线第52位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 52
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Eternals"
+    },
+    {
+      "stableId": "mcu-spider-man-no-way-home",
+      "title": "蜘蛛侠：英雄无归",
+      "originalTitle": "Spider-Man: No Way Home",
+      "mediaType": "movie",
+      "searchYear": 2021,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 530,
+      "timelineEra": "官方完整时间线第53位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 53
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Spider-Man: No Way Home"
+    },
+    {
+      "stableId": "mcu-doctor-strange-in-the-multiverse-of-madness",
+      "title": "奇异博士2：疯狂多元宇宙",
+      "originalTitle": "Doctor Strange in the Multiverse of Madness",
+      "mediaType": "movie",
+      "searchYear": 2022,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 540,
+      "timelineEra": "官方完整时间线第54位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 54
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Doctor Strange in the Multiverse of Madness"
+    },
+    {
+      "stableId": "mcu-hawkeye-s1",
+      "title": "鹰眼",
+      "originalTitle": "Hawkeye",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 550,
+      "timelineEra": "官方完整时间线第55位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 55
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Hawkeye"
+    },
+    {
+      "stableId": "mcu-moon-knight-s1",
+      "title": "月光骑士",
+      "originalTitle": "Moon Knight",
+      "mediaType": "tv",
+      "searchYear": 2022,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 560,
+      "timelineEra": "官方完整时间线第56位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 56
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Moon Knight"
+    },
+    {
+      "stableId": "mcu-black-panther-wakanda-forever",
+      "title": "黑豹2",
+      "originalTitle": "Black Panther: Wakanda Forever",
+      "mediaType": "movie",
+      "searchYear": 2022,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 570,
+      "timelineEra": "官方完整时间线第57位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 57
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Black Panther: Wakanda Forever"
+    },
+    {
+      "stableId": "mcu-echo-s1",
+      "title": "回声",
+      "originalTitle": "Echo",
+      "mediaType": "tv",
+      "searchYear": 2024,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 580,
+      "timelineEra": "官方完整时间线第58位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 58
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Echo"
+    },
+    {
+      "stableId": "mcu-she-hulk-attorney-at-law-s1",
+      "title": "女浩克",
+      "originalTitle": "She-Hulk: Attorney at Law",
+      "mediaType": "tv",
+      "searchYear": 2022,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 590,
+      "timelineEra": "官方完整时间线第59位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 59
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "She-Hulk: Attorney at Law"
+    },
+    {
+      "stableId": "mcu-ms-marvel-s1",
+      "title": "惊奇少女",
+      "originalTitle": "Ms. Marvel",
+      "mediaType": "tv",
+      "searchYear": 2022,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 600,
+      "timelineEra": "官方完整时间线第60位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 60
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Ms. Marvel"
+    },
+    {
+      "stableId": "mcu-thor-love-and-thunder",
+      "title": "雷神4：爱与雷霆",
+      "originalTitle": "Thor: Love and Thunder",
+      "mediaType": "movie",
+      "searchYear": 2022,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 610,
+      "timelineEra": "官方完整时间线第61位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 61
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Thor: Love and Thunder"
+    },
+    {
+      "stableId": "mcu-ironheart-s1",
+      "title": "钢铁之心",
+      "originalTitle": "Ironheart",
+      "mediaType": "tv",
+      "searchYear": 2025,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 620,
+      "timelineEra": "官方完整时间线第62位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 62
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Ironheart"
+    },
+    {
+      "stableId": "mcu-werewolf-by-night",
+      "title": "暗夜狼人",
+      "originalTitle": "Werewolf By Night",
+      "mediaType": "movie",
+      "searchYear": 2022,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 630,
+      "timelineEra": "官方完整时间线第63位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 63
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Werewolf By Night"
+    },
+    {
+      "stableId": "mcu-the-guardians-of-the-galaxy-holiday-special",
+      "title": "银河护卫队：圣诞特别篇",
+      "originalTitle": "The Guardians of the Galaxy Holiday Special",
+      "mediaType": "movie",
+      "searchYear": 2022,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 640,
+      "timelineEra": "官方完整时间线第64位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 64
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Guardians of the Galaxy Holiday Special"
+    },
+    {
+      "stableId": "mcu-ant-man-and-the-wasp-quantumania",
+      "title": "蚁人与黄蜂女：量子狂潮",
+      "originalTitle": "Ant-Man and the Wasp: Quantumania",
+      "mediaType": "movie",
+      "searchYear": 2023,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 650,
+      "timelineEra": "官方完整时间线第65位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 65
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Ant-Man and the Wasp: Quantumania"
+    },
+    {
+      "stableId": "mcu-guardians-of-the-galaxy-vol-3",
+      "title": "银河护卫队3",
+      "originalTitle": "Guardians of the Galaxy Vol. 3",
+      "mediaType": "movie",
+      "searchYear": 2023,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 660,
+      "timelineEra": "官方完整时间线第66位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 66
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Guardians of the Galaxy Vol. 3"
+    },
+    {
+      "stableId": "mcu-secret-invasion-s1",
+      "title": "秘密入侵",
+      "originalTitle": "Secret Invasion",
+      "mediaType": "tv",
+      "searchYear": 2023,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 670,
+      "timelineEra": "官方完整时间线第67位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 67
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Secret Invasion"
+    },
+    {
+      "stableId": "mcu-the-marvels",
+      "title": "惊奇队长2",
+      "originalTitle": "The Marvels",
+      "mediaType": "movie",
+      "searchYear": 2023,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 680,
+      "timelineEra": "官方完整时间线第68位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 68
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Marvels"
+    },
+    {
+      "stableId": "mcu-loki-s2",
+      "title": "洛基",
+      "originalTitle": "Loki",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 690,
+      "timelineEra": "官方完整时间线第69位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 69
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Loki S2"
+    },
+    {
+      "stableId": "mcu-what-if-s2",
+      "title": "假如…？",
+      "originalTitle": "What If…?",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 700,
+      "timelineEra": "官方完整时间线第70位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 70
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "What If…? S2"
+    },
+    {
+      "stableId": "mcu-deadpool-wolverine",
+      "title": "死侍与金刚狼",
+      "originalTitle": "Deadpool & Wolverine",
+      "mediaType": "movie",
+      "searchYear": 2024,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 710,
+      "timelineEra": "官方完整时间线第71位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 71
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Deadpool & Wolverine"
+    },
+    {
+      "stableId": "mcu-agatha-all-along-s1",
+      "title": "女巫阿加莎",
+      "originalTitle": "Agatha All Along",
+      "mediaType": "tv",
+      "searchYear": 2024,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 720,
+      "timelineEra": "官方完整时间线第72位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 72
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Agatha All Along"
+    },
+    {
+      "stableId": "mcu-what-if-s3",
+      "title": "假如…？",
+      "originalTitle": "What If…?",
+      "mediaType": "tv",
+      "searchYear": 2021,
+      "season": 3,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 730,
+      "timelineEra": "官方完整时间线第73位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 73
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "What If…? S3"
+    },
+    {
+      "stableId": "mcu-daredevil-born-again-s1",
+      "title": "夜魔侠：重生",
+      "originalTitle": "Daredevil: Born Again",
+      "mediaType": "tv",
+      "searchYear": 2025,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 740,
+      "timelineEra": "官方完整时间线第74位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 74
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Daredevil: Born Again S1"
+    },
+    {
+      "stableId": "mcu-captain-america-brave-new-world",
+      "title": "美国队长4",
+      "originalTitle": "Captain America: Brave New World",
+      "mediaType": "movie",
+      "searchYear": 2025,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 750,
+      "timelineEra": "官方完整时间线第75位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 75
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Captain America: Brave New World"
+    },
+    {
+      "stableId": "mcu-thunderbolts",
+      "title": "雷霆特攻队*",
+      "originalTitle": "Thunderbolts*",
+      "mediaType": "movie",
+      "searchYear": 2025,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 760,
+      "timelineEra": "官方完整时间线第76位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 76
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Thunderbolts*"
+    },
+    {
+      "stableId": "mcu-the-fantastic-four-first-steps",
+      "title": "神奇四侠：初露锋芒",
+      "originalTitle": "The Fantastic Four: First Steps",
+      "mediaType": "movie",
+      "searchYear": 2025,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 770,
+      "timelineEra": "官方完整时间线第77位（推荐观影位置）",
+      "universe": "multiverse",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 77
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Fantastic Four: First Steps"
+    },
+    {
+      "stableId": "mcu-wonder-man-s1",
+      "title": "奇迹人",
+      "originalTitle": "Wonder Man",
+      "mediaType": "tv",
+      "searchYear": 2026,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 780,
+      "timelineEra": "官方完整时间线第78位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 78
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Wonder Man"
+    },
+    {
+      "stableId": "mcu-daredevil-born-again-s2",
+      "title": "夜魔侠：重生",
+      "originalTitle": "Daredevil: Born Again",
+      "mediaType": "tv",
+      "searchYear": 2025,
+      "season": 2,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 790,
+      "timelineEra": "官方完整时间线第79位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 79
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "Daredevil: Born Again S2"
+    },
+    {
+      "stableId": "mcu-the-punisher-one-last-kill",
+      "title": "惩罚者：最后一击",
+      "originalTitle": "The Punisher: One Last Kill",
+      "mediaType": "movie",
+      "searchYear": 2026,
+      "season": null,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 800,
+      "timelineEra": "官方完整时间线第80位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 80
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "The Punisher: One Last Kill"
+    },
+    {
+      "stableId": "mcu-visionquest-s1",
+      "title": "幻视任务",
+      "originalTitle": "VisionQuest",
+      "mediaType": "tv",
+      "searchYear": 2026,
+      "season": 1,
+      "episodeRange": null,
+      "tmdbId": null,
+      "imdbId": null,
+      "traktId": null,
+      "timelineOrder": 810,
+      "timelineEra": "官方完整时间线第81位（主体故事顺序）",
+      "universe": "Earth-616",
+      "releaseDate": null,
+      "availabilityStatus": "pending_metadata",
+      "chronologySource": [
+        {
+          "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
+          "publishedAt": "2026-10-22",
+          "basis": "rendered-list-label",
+          "position": 81
+        }
+      ],
+      "lastVerifiedAt": "2026-11-08",
+      "metadataVerifiedAt": null,
+      "officialLabel": "VisionQuest"
+    }
+  ]
+}
