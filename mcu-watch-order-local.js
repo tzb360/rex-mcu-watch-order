@@ -6,7 +6,7 @@ var WidgetMetadata = {
   id: 'personal.mcu.timeline.local', title: '漫威宇宙时间线 · 本地版',
   description: '按漫威故事顺序显示下一部和下一集。时间线通过 HTTPS 更新，观看进度由 Rex 直接从 Trakt 同步。',
   author: 'Personal MCU Timeline', site: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus',
-  version: '0.2.3', requiredVersion: '0.0.1', detailCacheDuration: 60,
+  version: '0.2.4', requiredVersion: '0.0.1', detailCacheDuration: 60,
   modules: [{
     id: 'mcu-local', title: '漫威宇宙观影顺序', functionName: 'loadMcuLocal', cacheDuration: 0, requiresWebView: false,
     params: [
@@ -61,6 +61,7 @@ async function mcuNativeFetch(url, options) {
 }
 var mcuLocalTrakt = null;
 var mcuLocalSync = null;
+var mcuArtworkInFlight = new Map();
 var mcuLocalOperations = new Map();
 var mcuLocalOperation = Promise.resolve();
 function mcuLocalStatus(message, link) {
@@ -192,10 +193,12 @@ async function mcuLocalRun(params) {
     await mcuLocalStore.write('probe', marker);
     var roundTrip = (await mcuLocalStore.read('probe')) === marker;
     var authorized = Boolean(await mcuLocalStore.readSecret('tokens'));
+    var cached = await mcuLocalStore.read('public-catalog');
+    var watched = await mcuLocalStore.read('watched');
     var checks = await Promise.allSettled([mcuLocalTrakt.get('/movies/iron-man-2008', {}, false), mcuLoadSeed(seedUrl)]);
     var traktStatus = checks[0].status === 'fulfilled' ? checks[0].value.status : checks[0].reason.code || '失败';
     var seedStatus = checks[1].status === 'fulfilled' ? checks[1].value.seed.version + '，' + checks[1].value.seed.entries.length + ' 个区段' : checks[1].reason.message;
-    return mcuLocalStatus('本地诊断：存储读写=' + (roundTrip ? '成功' : '失败') + '；Trakt GET=' + traktStatus + '；时间线=' + seedStatus + '；TMDB=' + Boolean(Widget.tmdb && Widget.tmdb.get) + '；Trakt 授权=' + (authorized ? '已连接' : '未连接') + '。');
+    return mcuLocalStatus('本地诊断：存储读写=' + (roundTrip ? '成功' : '失败') + '；Trakt GET=' + traktStatus + '；时间线=' + seedStatus + '；TMDB=' + Boolean(Widget.tmdb && Widget.tmdb.get) + '；Trakt 授权=' + (authorized ? '已连接' : '未连接') + '。\n本地时间线=' + (cached ? cached.seed.version + (cached.warning ? '（使用缓存）' : '') : '未缓存') + '；观看记录=' + (watched ? watched.syncedAt : '未同步') + '。');
   }
   var token = await mcuLocalStore.readSecret('tokens');
   if (!token) throw new Error('请先将“操作”选择为“连接 Trakt”。');
@@ -216,21 +219,42 @@ async function mcuLocalRun(params) {
       else return page === 1 ? mcuLocalStatus('正在核对时间线 ' + next.entries.length + '/' + next.totalEntries + '。刷新可继续。') : [];
     }
   }
-  mcuLocalSync = mcuLocalSync || new WatchSync(mcuLocalTrakt, mcuLocalStore, 600000);
-  var snapshot = await mcuLocalSync.load(action === 'refresh' && page === 1, action === 'catalog');
-  var unresolved = timeline.entries.filter(function (entry) { return entry.availabilityStatus === 'pending_metadata'; }).length;
-  var warning = [snapshot.warning, catalog.warning && '使用上次有效时间线：' + catalog.warning,
-    unresolved ? unresolved + ' 个区段待核实' : ''].filter(Boolean).join('；');
-  var items = buildQueue(timeline, Object.assign({}, snapshot, { warning: warning }));
-  if (!items.length && page === 1) return mcuLocalStatus('当前已核实、已发行的 MCU 内容已全部完成。' + warning + '\n时间线 ' + catalog.seed.version);
-  var output = items.slice((page - 1) * 30, page * 30);
-  for (var item of output) item.description += '\n时间线 ' + catalog.seed.version;
-  if (output.length && (action === 'catalog' || warning)) {
-    var detail = catalog.warning ? '时间线刷新失败，已使用缓存 ' + catalog.seed.version : '时间线 ' + catalog.seed.version;
-    if (snapshot.warning && !catalog.warning) detail += ' · 观看记录使用缓存';
-    output[0].title += ' · ' + detail;
+  mcuLocalSync = mcuLocalSync || new WatchSync(mcuLocalTrakt, mcuLocalStore, 30000);
+  var snapshot = await mcuLocalSync.load(action === 'refresh' && page === 1, action === 'catalog', false);
+  var items = buildQueue(timeline, snapshot, Date.now(), true);
+  if (!items.length && page === 1) return mcuLocalStatus('当前已核实、已发行的 MCU 内容已全部完成。');
+  return Promise.all(items.slice((page - 1) * 20, page * 20).map(mcuNativeCard));
+}
+async function mcuNativeCard(item) {
+  var key = 'artwork.' + item.id;
+  var cached = await mcuLocalStore.read(key).catch(function () { return null; });
+  if ((!cached || !cached.posterPath) && Widget.tmdb && Widget.tmdb.get) {
+    if (!mcuArtworkInFlight.has(key)) {
+      var request = Promise.resolve().then(async function () {
+        var response = await Widget.tmdb.get(item.id.replace('.', '/'), { params: { language: 'zh-CN' } });
+        var media = response && response.data !== undefined ? response.data : response;
+        if (typeof media === 'string') media = JSON.parse(media);
+        if (!media || String(media.id) !== item.id.split('.')[1]) return null;
+        var official = {
+          title: media.title || media.name, posterPath: media.poster_path, backdropPath: media.backdrop_path,
+          overview: media.overview, checkedAt: Date.now()
+        };
+        await mcuLocalStore.write(key, official).catch(function () {});
+        return official;
+      }).catch(function () { return null; }).finally(function () {
+        mcuArtworkInFlight.delete(key);
+      });
+      mcuArtworkInFlight.set(key, request);
+    }
+    cached = await mcuArtworkInFlight.get(key) || cached;
   }
-  return output;
+  if (cached) {
+    item.title = cached.title || item.title;
+    if (cached.posterPath) item.posterPath = cached.posterPath;
+    if (cached.backdropPath) item.backdropPath = cached.backdropPath;
+    if (cached.overview) item.description = cached.overview;
+  }
+  return item;
 }
 function loadMcuLocal(params) {
   params = params || {};
@@ -360,7 +384,7 @@ function nextEpisode(entry, watched, now = Date.now()) {
   const remaining = episodes.filter(e => !done.has(e.season + ':' + e.number));
   return { next: remaining[0] || null, remaining: remaining.length, complete: entry.segmentComplete === true && episodes.length > 0 && remaining.length === 0, watched: episodes.length - remaining.length };
 }
-function buildQueue(timeline, snapshot, now = Date.now()) {
+function buildQueue(timeline, snapshot, now = Date.now(), nativePresentation = false) {
   if (!snapshot?.movies || !snapshot?.shows) throw new Error('WATCH_STATE_UNAVAILABLE');
   const items = [];
   for (const entry of [...timeline.entries].sort((a, b) => a.timelineOrder - b.timelineOrder)) {
@@ -373,6 +397,14 @@ function buildQueue(timeline, snapshot, now = Date.now()) {
       progress = nextEpisode(entry, snapshot.shows, now);
       if (progress.complete) continue;
       if (!progress.next) continue; // released episodes all watched, future episodes cannot lead the queue
+    }
+    if (nativePresentation) {
+      items.push({
+        id: entry.mediaType + '.' + entry.tmdbId, type: 'tmdb', mediaType: entry.mediaType,
+        title: entry.originalTitle, releaseDate: entry.releaseDate,
+        ...(progress?.next ? { season: progress.next.season, episode: progress.next.number } : {})
+      });
+      continue;
     }
     const paused = (snapshot.playback || []).find(p => p.progress > 0 && p.progress < 100 && (entry.mediaType === 'movie' ? p.type === 'movie' && matches(entry, p.movie) : p.type === 'episode' && matches(entry, p.show) && p.episode?.season === progress.next.season && p.episode?.number === progress.next.number));
     const live = snapshot.watching && Date.parse(snapshot.watching.expires_at) > now && Date.parse(snapshot.watching.started_at) <= now && (entry.mediaType === 'movie' ? snapshot.watching.type === 'movie' && matches(entry, snapshot.watching.movie) : snapshot.watching.type === 'episode' && matches(entry, snapshot.watching.show) && snapshot.watching.episode?.season === progress.next.season && snapshot.watching.episode?.number === progress.next.number);
@@ -393,7 +425,7 @@ function buildQueue(timeline, snapshot, now = Date.now()) {
 
 class WatchSync {
   constructor(trakt, store, ttl = 600000, now = Date.now) { Object.assign(this, { trakt, store, ttl, now }); this.pending = null; this.nextAttempt = 0; }
-  async load(force = false, cacheOnly = false) {
+  async load(force = false, cacheOnly = false, includePlayback = true) {
     const old = await this.store.read('watched');
     if (old && (cacheOnly || (!force && this.now() - Date.parse(old.syncedAt) < this.ttl))) return old;
     if (this.pending) return this.pending;
@@ -421,10 +453,10 @@ class WatchSync {
         }
         let playback = old?.playback || [], watching = null, playbackWarning;
         try {
-          if (!(unchanged('movies', 'paused_at') && unchanged('episodes', 'paused_at')) || old?.warning) {
+          if (includePlayback && (!(unchanged('movies', 'paused_at') && unchanged('episodes', 'paused_at')) || old?.warning)) {
             playback = await this.trakt.pages('/sync/playback');
           }
-          watching = (await this.trakt.get('/users/me/watching')).data;
+          if (includePlayback) watching = (await this.trakt.get('/users/me/watching')).data;
         } catch { playbackWarning = '播放进度暂不可用；已观看记录已同步'; }
         const next = { movies, shows, playback, watching, activities, syncedAt: new Date(this.now()).toISOString(), warning: playbackWarning };
         await this.store.write('watched', next);
