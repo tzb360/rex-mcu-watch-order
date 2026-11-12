@@ -6,7 +6,7 @@ var WidgetMetadata = {
   id: 'personal.mcu.timeline.local', title: '漫威宇宙时间线 · 本地版',
   description: '按漫威故事顺序显示下一部和下一集。时间线通过 HTTPS 更新，观看进度由 Rex 直接从 Trakt 同步。',
   author: 'Personal MCU Timeline', site: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus',
-  version: '0.2.4', requiredVersion: '0.0.1', detailCacheDuration: 60,
+  version: '0.2.5', requiredVersion: '0.0.1', detailCacheDuration: 60,
   modules: [{
     id: 'mcu-local', title: '漫威宇宙观影顺序', functionName: 'loadMcuLocal', cacheDuration: 0, requiresWebView: false,
     params: [
@@ -226,15 +226,15 @@ async function mcuLocalRun(params) {
   return Promise.all(items.slice((page - 1) * 20, page * 20).map(mcuNativeCard));
 }
 async function mcuNativeCard(item) {
-  var key = 'artwork.' + item.id;
+  var key = 'artwork.' + item.mediaType + '.' + item.tmdbId;
   var cached = await mcuLocalStore.read(key).catch(function () { return null; });
   if ((!cached || !cached.posterPath) && Widget.tmdb && Widget.tmdb.get) {
     if (!mcuArtworkInFlight.has(key)) {
       var request = Promise.resolve().then(async function () {
-        var response = await Widget.tmdb.get(item.id.replace('.', '/'), { params: { language: 'zh-CN' } });
+        var response = await Widget.tmdb.get(item.mediaType + '/' + item.tmdbId, { params: { language: 'zh-CN' } });
         var media = response && response.data !== undefined ? response.data : response;
         if (typeof media === 'string') media = JSON.parse(media);
-        if (!media || String(media.id) !== item.id.split('.')[1]) return null;
+        if (!media || Number(media.id) !== item.tmdbId) return null;
         var official = {
           title: media.title || media.name, posterPath: media.poster_path, backdropPath: media.backdrop_path,
           overview: media.overview, checkedAt: Date.now()
@@ -400,7 +400,7 @@ function buildQueue(timeline, snapshot, now = Date.now(), nativePresentation = f
     }
     if (nativePresentation) {
       items.push({
-        id: entry.mediaType + '.' + entry.tmdbId, type: 'tmdb', mediaType: entry.mediaType,
+        id: String(entry.tmdbId), tmdbId: entry.tmdbId, type: 'tmdb', mediaType: entry.mediaType,
         title: entry.originalTitle, releaseDate: entry.releaseDate,
         ...(progress?.next ? { season: progress.next.season, episode: progress.next.number } : {})
       });
