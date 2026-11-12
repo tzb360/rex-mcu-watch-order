@@ -4,16 +4,16 @@ var MCU_CLIENT_ID = 'jik3qry8gfgZ1jhnC8txpNYnoA1eImB_zz-nBDtGbiI';
 var MCU_SEED_URL = 'https://raw.githubusercontent.com/tzb360/rex-mcu-watch-order/main/timeline.seed.json';
 var WidgetMetadata = {
   id: 'personal.mcu.timeline.local', title: '漫威宇宙时间线 · 本地版',
-  description: '本机直接读取 Trakt，不需要常驻 AWS 后端。授权记录保存于 Rex 模块本地存储；未确认其采用系统钥匙串。仅供本人使用。',
+  description: '按漫威故事顺序显示下一部和下一集。时间线通过 HTTPS 更新，观看进度由 Rex 直接从 Trakt 同步。',
   author: 'Personal MCU Timeline', site: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus',
-  version: '0.2.0', requiredVersion: '0.0.1', detailCacheDuration: 60,
+  version: '0.2.2', requiredVersion: '0.0.1', detailCacheDuration: 60,
   modules: [{
     id: 'mcu-local', title: '漫威宇宙观影顺序', functionName: 'loadMcuLocal', cacheDuration: 0, requiresWebView: false,
     params: [
       { name: 'action', title: '操作', type: 'enumeration', value: 'watch', enumOptions: [
         { title: '查看待看清单', value: 'watch' }, { title: '连接 Trakt', value: 'connect' },
         { title: '我已完成授权', value: 'confirm' }, { title: '立即同步观看记录', value: 'refresh' },
-        { title: '更新官方时间线', value: 'catalog' }, { title: '检查运行环境', value: 'diagnose' }
+        { title: '刷新时间线', value: 'catalog' }, { title: '检查运行环境', value: 'diagnose' }
       ] },
       { name: 'seedUrl', title: '时间线数据地址', type: 'input', value: MCU_SEED_URL, description: '只填写可信的公开 HTTPS JSON 地址；不携带个人观看数据或凭据。' },
       { name: 'page', title: '页码', type: 'page', value: '1' }
@@ -43,10 +43,11 @@ var mcuLocalStore = {
 async function mcuNativeFetch(url, options) {
   options = options || {};
   var response;
+  var request = { headers: options.headers || {}, timeout: 6 };
   if (options.method === 'POST') {
-    response = await Widget.http.post(url, options.body ? JSON.parse(options.body) : {}, { headers: options.headers || {} });
+    response = await Widget.http.post(url, options.body ? JSON.parse(options.body) : {}, request);
   } else {
-    response = await Widget.http.get(url, { headers: options.headers || {} });
+    response = await Widget.http.get(url, request);
   }
   var status = Number(response.statusCode || response.status || 200);
   var data = response.data;
@@ -59,9 +60,9 @@ async function mcuNativeFetch(url, options) {
   };
 }
 var mcuLocalTrakt = null;
-var mcuLocalTimeline = null;
 var mcuLocalSync = null;
-var mcuLocalOperation = null;
+var mcuLocalOperations = new Map();
+var mcuLocalOperation = Promise.resolve();
 function mcuLocalStatus(message, link) {
   var url = link || 'https://developer.trakt.tv/apps';
   return [{ id: url, type: 'url', title: message.split('\n')[0], description: message, link: url }];
@@ -103,6 +104,78 @@ async function mcuAuthorizeDevice(action) {
   }
   return mcuLocalStatus('Trakt 已连接成功。请选择“查看待看清单”并刷新。');
 }
+function mcuValidCatalog(seed) {
+  if (!seed || seed.schemaVersion !== 1 || typeof seed.version !== 'string' ||
+      !/^[-.a-zA-Z0-9]{1,80}$/.test(seed.version) || !Number.isFinite(Date.parse(seed.updatedAt)) ||
+      !Array.isArray(seed.entries) || seed.entries.length < 50 || seed.entries.length > 600) return false;
+  var ids = new Set();
+  var positions = new Set();
+  return seed.entries.every(function (entry) {
+    if (!entry || typeof entry.stableId !== 'string' || !entry.stableId || ids.has(entry.stableId) ||
+        typeof entry.originalTitle !== 'string' || !entry.originalTitle || !['movie', 'tv'].includes(entry.mediaType) ||
+        !Number.isFinite(entry.timelineOrder) || positions.has(entry.timelineOrder) ||
+        !Array.isArray(entry.chronologySource) || !entry.chronologySource.some(function (source) { return source && source.url === SOURCE; })) return false;
+    ids.add(entry.stableId);
+    positions.add(entry.timelineOrder);
+    if (seed.metadataStatus !== 'resolved') return seed.metadataStatus === 'requires-live-resolution';
+    if (entry.availabilityStatus === 'pending_metadata') return true;
+    if (!['released', 'available', 'announced'].includes(entry.availabilityStatus) ||
+        !Number.isInteger(entry.tmdbId) || entry.tmdbId <= 0 ||
+        (entry.availabilityStatus !== 'announced' && !Number.isFinite(Date.parse(entry.releaseDate)))) return false;
+    if (entry.mediaType === 'movie') return true;
+    var episodes = entry.episodes;
+    return Number.isInteger(entry.season) && Array.isArray(episodes) &&
+      (entry.availabilityStatus !== 'available' || episodes.length > 0) &&
+      new Set(episodes.map(function (episode) { return episode && episode.number; })).size === episodes.length &&
+      episodes.every(function (episode) {
+        return episode && episode.season === entry.season && Number.isInteger(episode.number) && episode.number > 0 &&
+          (episode.firstAired == null || Number.isFinite(Date.parse(episode.firstAired)));
+      });
+  }) && (seed.metadataStatus !== 'resolved' || seed.entries.some(function (entry) {
+    return ['released', 'available'].includes(entry.availabilityStatus);
+  }));
+}
+async function mcuLoadSeed(url, etag, force) {
+  var headers = {};
+  if (etag) headers['If-None-Match'] = etag;
+  if (force) headers['Cache-Control'] = 'no-cache';
+  var response, seed;
+  try { response = await mcuNativeFetch(url, { headers: headers }); }
+  catch (_) { throw new Error('时间线下载失败：Rex 无法连接数据地址。'); }
+  if (response.status === 304) return null;
+  if (!response.ok) throw new Error('时间线下载失败：HTTP ' + response.status + '。');
+  try { seed = await response.json(); }
+  catch (_) { throw new Error('时间线地址没有返回 JSON。'); }
+  if (!mcuValidCatalog(seed)) throw new Error('时间线 JSON 格式不符合要求。');
+  return { seed: seed, etag: response.headers.get('etag') };
+}
+async function mcuRefreshCatalog(url, force) {
+  var previous = await mcuLocalStore.read('public-catalog');
+  var cached = previous && previous.url === url ? previous : null;
+  if (!force && cached && Date.now() < cached.nextCheck) return cached;
+  try {
+    var remote = await mcuLoadSeed(url, cached && cached.etag, force);
+    if (!remote && !cached) throw new Error('时间线服务器没有返回初始数据。');
+    if (remote && cached && cached.seed.metadataStatus === 'resolved' && remote.seed.metadataStatus !== 'resolved') {
+      throw new Error('新时间线缺少已核实的元数据。');
+    }
+    if (remote && cached && Date.parse(remote.seed.updatedAt) < Date.parse(cached.seed.updatedAt)) {
+      throw new Error('时间线版本早于本地缓存。');
+    }
+    var latest = Object.assign({}, remote || cached, { url: url, nextCheck: Date.now() + 30 * 60000, warning: '' });
+    await mcuLocalStore.write('public-catalog', latest);
+    return latest;
+  } catch (error) {
+    if (!cached) {
+      var legacy = !previous && url === MCU_SEED_URL && await mcuLocalStore.read('timeline');
+      if (legacy && legacy.metadataStatus === 'resolved') return { seed: legacy, warning: error.message };
+      throw error;
+    }
+    var fallback = Object.assign({}, cached, { nextCheck: Date.now() + 5 * 60000, warning: error.message });
+    await mcuLocalStore.write('public-catalog', fallback);
+    return fallback;
+  }
+}
 async function mcuLocalRun(params) {
   if (typeof Widget === 'undefined' || !Widget.http || !Widget.storage || !Widget.storage.get || !Widget.storage.set) throw new Error('此 Rex 运行环境缺少 HTTP 或持久化存储接口，无法运行本地版。');
   var page = Number(params.page || 1);
@@ -111,80 +184,75 @@ async function mcuLocalRun(params) {
   // Persist the provider's backoff between client script invocations.
   mcuLocalTrakt.blockedUntil = await mcuLocalStore.read('blocked-until') || 0;
   var action = params.action || 'watch';
+  if (action === 'connect' || action === 'confirm') return mcuAuthorizeDevice(action);
+  var seedUrl = String(params.seedUrl || MCU_SEED_URL);
+  if (!/^https:\/\/[^\s?#@]+$/.test(seedUrl)) throw new Error('请填写可信的 HTTPS 时间线 JSON 地址。');
   if (action === 'diagnose') {
     var marker = 'storage-check-' + Date.now();
     await mcuLocalStore.write('probe', marker);
     var roundTrip = (await mcuLocalStore.read('probe')) === marker;
-    var result = await mcuLocalTrakt.get('/movies/iron-man-2008', {}, false);
     var authorized = Boolean(await mcuLocalStore.readSecret('tokens'));
-    return mcuLocalStatus('本地诊断：存储读写=' + (roundTrip ? '成功' : '失败') + '；Trakt GET=' + result.status + '；TMDB=' + Boolean(Widget.tmdb && Widget.tmdb.get) + '；Trakt 授权=' + (authorized ? '已连接' : '未连接') + '。未读取或修改观看记录。');
+    var checks = await Promise.allSettled([mcuLocalTrakt.get('/movies/iron-man-2008', {}, false), mcuLoadSeed(seedUrl)]);
+    var traktStatus = checks[0].status === 'fulfilled' ? checks[0].value.status : checks[0].reason.code || '失败';
+    var seedStatus = checks[1].status === 'fulfilled' ? checks[1].value.seed.version + '，' + checks[1].value.seed.entries.length + ' 个区段' : checks[1].reason.message;
+    return mcuLocalStatus('本地诊断：存储读写=' + (roundTrip ? '成功' : '失败') + '；Trakt GET=' + traktStatus + '；时间线=' + seedStatus + '；TMDB=' + Boolean(Widget.tmdb && Widget.tmdb.get) + '；Trakt 授权=' + (authorized ? '已连接' : '未连接') + '。');
   }
-  if (action === 'connect' || action === 'confirm') return mcuAuthorizeDevice(action);
   var token = await mcuLocalStore.readSecret('tokens');
   if (!token) throw new Error('请先将“操作”选择为“连接 Trakt”。');
-  var seedUrl = String(params.seedUrl || MCU_SEED_URL);
-  if (!/^https:\/\/[^\s?#@]+$/.test(seedUrl)) throw new Error('请填写可信的 HTTPS 时间线 JSON 地址。');
-  mcuLocalTimeline = new Timeline({ store: mcuLocalStore, trakt: mcuLocalTrakt, fetchImpl: mcuNativeFetch, seedLoader: async function () {
-    var response = await mcuNativeFetch(seedUrl);
-    if (!response.ok) throw new Error('TIMELINE_SEED_UNAVAILABLE');
-    var seed = await response.json();
-    if (seed.schemaVersion !== 1 || !Array.isArray(seed.entries) || seed.entries.length < 50 || seed.entries.some(function (e) { return !e.stableId || !e.originalTitle || !Array.isArray(e.chronologySource) || !e.chronologySource.some(function (s) { return s.url === SOURCE; }); })) throw new Error('TIMELINE_SEED_INVALID');
-    return seed;
-  } });
-  var timeline = await mcuLocalTimeline.load();
-  var status = await mcuLocalStore.read('update-status');
-  var due = !status || (status.success ? Date.now() - Date.parse(status.checkedAt) >= 86400000 : Date.now() >= status.retryAt);
-  if (action === 'catalog' || due || timeline.metadataStatus !== 'resolved') {
-    try { timeline = await mcuLocalTimeline.update(); }
-    catch (error) { if (timeline.metadataStatus !== 'resolved') throw error; }
+  var catalog = await mcuRefreshCatalog(seedUrl, action === 'catalog' && page === 1);
+  var timeline = catalog.seed;
+  if (timeline.metadataStatus !== 'resolved') {
+    var saved = await mcuLocalStore.read('timeline');
+    if (saved && saved.catalogUrl === seedUrl && saved.catalogVersion === timeline.version) {
+      timeline = saved;
+    } else {
+      var resolver = new Timeline({ store: mcuLocalStore, trakt: mcuLocalTrakt, fetchImpl: mcuNativeFetch });
+      var next = await resolver.update({
+        current: Object.assign({}, timeline, { catalogUrl: seedUrl, catalogVersion: timeline.version }),
+        maxNewEntries: 8, deadline: Date.now() + 5000, verifyOfficial: false, tolerateMissing: true
+      });
+      if (next.metadataStatus === 'resolved') timeline = next;
+      else if (saved && saved.metadataStatus === 'resolved' && (saved.catalogUrl === seedUrl || (!saved.catalogUrl && seedUrl === MCU_SEED_URL))) timeline = saved;
+      else return page === 1 ? mcuLocalStatus('正在核对时间线 ' + next.entries.length + '/' + next.totalEntries + '。刷新可继续。') : [];
+    }
   }
   mcuLocalSync = mcuLocalSync || new WatchSync(mcuLocalTrakt, mcuLocalStore, 600000);
-  var snapshot = await mcuLocalSync.load(action === 'refresh');
-  var updateStatus = await mcuLocalStore.read('update-status');
-  var warning = [snapshot.warning, timeline.sourceWarning, updateStatus && updateStatus.success === false ? '时间线更新失败，使用上次有效数据' : '', timeline.pendingReview ? timeline.pendingReview + '部新作品待核实' : '', Date.now() - Date.parse(timeline.updatedAt) > 172800000 ? '时间线超过48小时未更新' : ''].filter(Boolean).join('；');
+  var snapshot = await mcuLocalSync.load(action === 'refresh' && page === 1, action === 'catalog');
+  var unresolved = timeline.entries.filter(function (entry) { return entry.availabilityStatus === 'pending_metadata'; }).length;
+  var warning = [snapshot.warning, catalog.warning && '使用上次有效时间线：' + catalog.warning,
+    unresolved ? unresolved + ' 个区段待核实' : ''].filter(Boolean).join('；');
   var items = buildQueue(timeline, Object.assign({}, snapshot, { warning: warning }));
-  if (!items.length && page === 1) throw new Error('当前已核实、已发行的 MCU 内容已全部完成。' + warning);
-  var selected = items.slice((page - 1) * 30, page * 30);
-  var output = [];
-  for (var offset = 0; offset < selected.length; offset += 3) output = output.concat(await Promise.all(selected.slice(offset, offset + 3).map(mcuLocalArtwork)));
-  if (warning && output.length) output[0].title = '【同步提示】' + output[0].title;
+  if (!items.length && page === 1) return mcuLocalStatus('当前已核实、已发行的 MCU 内容已全部完成。' + warning + '\n时间线 ' + catalog.seed.version);
+  var output = items.slice((page - 1) * 30, page * 30);
+  for (var item of output) item.description += '\n时间线 ' + catalog.seed.version;
+  if (output.length && (action === 'catalog' || warning)) {
+    var detail = catalog.warning ? '时间线刷新失败，已使用缓存 ' + catalog.seed.version : '时间线 ' + catalog.seed.version;
+    if (snapshot.warning && !catalog.warning) detail += ' · 观看记录使用缓存';
+    output[0].title += ' · ' + detail;
+  }
   return output;
 }
-async function mcuLocalArtwork(item) {
-  if (!Widget.tmdb || !Widget.tmdb.get) return item;
-  var key = 'artwork.' + item.id;
-  var cached = await mcuLocalStore.read(key);
-  try {
-    if (!cached || Date.now() - cached.checkedAt > 86400000) {
-      var response = await Widget.tmdb.get(item.id.replace('.', '/'), { params: { language: 'zh-CN' } });
-      var media = response && response.data !== undefined ? response.data : response;
-      if (typeof media === 'string') media = JSON.parse(media);
-      if (!media || String(media.id) !== item.id.split('.')[1]) throw new Error('TMDB_ID_INVALID');
-      cached = { checkedAt: Date.now(), title: media.title || media.name, posterPath: media.poster_path, backdropPath: media.backdrop_path, overview: media.overview };
-      await mcuLocalStore.write(key, cached);
-    }
-  } catch (_) { /* Preserve Trakt identity/details and the previous valid artwork. */ }
-  if (cached) {
-    if (cached.title) item.title = cached.title + item.title.slice(item.title.indexOf(' · ') >= 0 ? item.title.indexOf(' · ') : item.title.length);
-    item.posterPath = cached.posterPath || item.posterPath;
-    item.backdropPath = cached.backdropPath || item.backdropPath;
-    if (cached.overview) item.description += '\n' + cached.overview;
-  }
-  return item;
-}
-async function loadMcuLocal(params) {
-  if (mcuLocalOperation) return mcuLocalOperation;
-  mcuLocalOperation = mcuLocalRun(params || {}).catch(async function (error) {
-    if (mcuLocalTrakt && mcuLocalTrakt.blockedUntil) await mcuLocalStore.write('blocked-until', mcuLocalTrakt.blockedUntil);
-    if (error.code === 'TRAKT_NETWORK') throw new Error('Rex 无法连接 Trakt，请检查网络；本地缓存和观看记录保留。');
-    if (error.code === 'TRAKT_REAUTHORIZE' || error.code === 'TRAKT_AUTH_REQUIRED') throw new Error('Trakt 授权已失效，请选择“连接 Trakt”重新授权；已有缓存保留。');
-    if (error.code === 'TRAKT_RATE_LIMIT') throw new Error('Trakt 请求限流，请于 ' + new Date(error.retryAt).toISOString() + ' 后重试。');
-    throw error;
-  }).catch(function (error) { return mcuLocalStatus('设置或同步提示：' + error.message); }).finally(async function () {
-    if (mcuLocalTrakt && mcuLocalTrakt.blockedUntil) await mcuLocalStore.write('blocked-until', mcuLocalTrakt.blockedUntil);
-    mcuLocalOperation = null;
+function loadMcuLocal(params) {
+  params = params || {};
+  var key = JSON.stringify([params.action || 'watch', params.seedUrl || MCU_SEED_URL, Number(params.page || 1)]);
+  if (mcuLocalOperations.has(key)) return mcuLocalOperations.get(key);
+  var task = mcuLocalOperation.then(function () {
+    return mcuLocalRun(params);
+  }).catch(function (error) {
+    var message = error.message;
+    if (error.code === 'TRAKT_NETWORK') message = 'Rex 无法连接 Trakt，请检查网络。';
+    if (error.code === 'TRAKT_REAUTHORIZE' || error.code === 'TRAKT_AUTH_REQUIRED') message = 'Trakt 授权已失效，请使用“连接 Trakt”重新授权。';
+    if (error.code === 'TRAKT_RATE_LIMIT') message = 'Trakt 请求限流，请于 ' + new Date(error.retryAt).toISOString() + ' 后重试。';
+    return mcuLocalStatus('设置或同步提示：' + message);
+  }).finally(async function () {
+    try {
+      if (mcuLocalTrakt && mcuLocalTrakt.blockedUntil) await mcuLocalStore.write('blocked-until', mcuLocalTrakt.blockedUntil);
+    } catch (_) { /* Keep the current result if saving rate-limit state fails. */ }
+    mcuLocalOperations.delete(key);
   });
-  return mcuLocalOperation;
+  mcuLocalOperations.set(key, task);
+  mcuLocalOperation = task;
+  return task;
 }
 
 
@@ -287,7 +355,7 @@ function matches(a, b) {
 }
 function nextEpisode(entry, watched, now = Date.now()) {
   const show = watched.find(w => matches(entry, w.show));
-  const done = new Set((show?.seasons || []).flatMap(s => s.episodes.filter(e => e.plays > 0).map(e => s.number + ':' + e.number)));
+  const done = new Set((show?.seasons || []).flatMap(s => s.episodes.filter(e => e.plays > 0 && (!show.reset_at || Date.parse(e.last_watched_at) >= Date.parse(show.reset_at))).map(e => s.number + ':' + e.number)));
   const episodes = (entry.episodes || []).filter(e => e.firstAired && Date.parse(e.firstAired) <= now);
   const remaining = episodes.filter(e => !done.has(e.season + ':' + e.number));
   return { next: remaining[0] || null, remaining: remaining.length, complete: entry.segmentComplete === true && episodes.length > 0 && remaining.length === 0, watched: episodes.length - remaining.length };
@@ -297,7 +365,7 @@ function buildQueue(timeline, snapshot, now = Date.now()) {
   const items = [];
   for (const entry of [...timeline.entries].sort((a, b) => a.timelineOrder - b.timelineOrder)) {
     if (!['available', 'released'].includes(entry.availabilityStatus) || !entry.releaseDate || Date.parse(entry.releaseDate) > now) continue;
-    if (!entry.tmdbId) throw new Error('METADATA_INCOMPLETE:' + entry.stableId);
+    if (!entry.tmdbId) continue;
     let progress = null;
     if (entry.mediaType === 'movie') {
       if (snapshot.movies.some(w => w.plays > 0 && matches(entry, w.movie))) continue;
@@ -317,7 +385,7 @@ function buildQueue(timeline, snapshot, now = Date.now()) {
       title: [entry.title || entry.originalTitle, segment, next || status].filter(Boolean).join(' · '),
       releaseDate: entry.releaseDate, posterPath: entry.posterPath || undefined, backdropPath: entry.backdropPath || undefined,
       description: [entry.originalTitle, entry.timelineEra, entry.universe === 'multiverse' ? '多元宇宙分支 · 官方推荐观影位置' : entry.universe === 'official-unclassified' ? '官方已收录；宇宙归属待核实' : '', status, next, entry.overview, 'Trakt 同步：' + snapshot.syncedAt, notices].filter(Boolean).join('\n'),
-      ...(progress?.next ? { episode: progress.next.number } : {})
+      ...(progress?.next ? { season: progress.next.season, episode: progress.next.number } : {})
     });
   }
   return items;
@@ -325,9 +393,9 @@ function buildQueue(timeline, snapshot, now = Date.now()) {
 
 class WatchSync {
   constructor(trakt, store, ttl = 600000, now = Date.now) { Object.assign(this, { trakt, store, ttl, now }); this.pending = null; this.nextAttempt = 0; }
-  async load(force = false) {
+  async load(force = false, cacheOnly = false) {
     const old = await this.store.read('watched');
-    if (!force && old && this.now() - Date.parse(old.syncedAt) < this.ttl) return old;
+    if (old && (cacheOnly || (!force && this.now() - Date.parse(old.syncedAt) < this.ttl))) return old;
     if (this.pending) return this.pending;
     if (this.now() < this.nextAttempt) {
       if (old) return { ...old, warning: '观看状态暂不可刷新，使用缓存' };
@@ -335,16 +403,30 @@ class WatchSync {
     }
     this.pending = (async () => {
       try {
-        // Fetch watched state before playback; commit only a complete snapshot.
-        const movies = await this.trakt.pages('/sync/watched/movies');
-        const shows = await this.trakt.pages('/sync/watched/shows', { extended: 'progress' });
-        if (shows.some(s => !Array.isArray(s.seasons))) throw new Error('TRAKT_MISSING_EPISODES');
-        let playback = [], watching = null, playbackWarning;
+        let activities;
+        try { activities = (await this.trakt.get('/sync/last_activities')).data; }
+        catch (error) {
+          if (error.code !== 'TRAKT_HTTP_404') throw error;
+        }
+        const unchanged = (kind, field) => Boolean(
+          activities?.[kind]?.[field] && old?.activities?.[kind]?.[field] === activities[kind][field]
+        );
+        const [movies, shows] = await Promise.all([
+          unchanged('movies', 'watched_at') ? old.movies : this.trakt.get('/sync/watched/movies').then(r => r.data),
+          unchanged('episodes', 'watched_at') ? old.shows : this.trakt.get('/sync/watched/shows').then(r => r.data)
+        ]);
+        if (!Array.isArray(movies) || !Array.isArray(shows)) throw new Error('TRAKT_INVALID_RESPONSE');
+        if (shows.some(s => !Array.isArray(s?.seasons) || s.seasons.some(season => !Array.isArray(season?.episodes)))) {
+          throw new Error('TRAKT_MISSING_EPISODES');
+        }
+        let playback = old?.playback || [], watching = null, playbackWarning;
         try {
-          playback = await this.trakt.pages('/sync/playback');
+          if (!(unchanged('movies', 'paused_at') && unchanged('episodes', 'paused_at')) || old?.warning) {
+            playback = await this.trakt.pages('/sync/playback');
+          }
           watching = (await this.trakt.get('/users/me/watching')).data;
         } catch { playbackWarning = '播放进度暂不可用；已观看记录已同步'; }
-        const next = { movies, shows, playback, watching, syncedAt: new Date(this.now()).toISOString(), warning: playbackWarning };
+        const next = { movies, shows, playback, watching, activities, syncedAt: new Date(this.now()).toISOString(), warning: playbackWarning };
         await this.store.write('watched', next);
         this.nextAttempt = 0;
         return next;
@@ -497,27 +579,46 @@ class Timeline {
     // Avoid silently losing a formerly verified title if official text changes spelling.
     const missing = old.entries.filter(e => !entries.some(n => n.stableId === e.stableId));
     if (missing.length) throw new Error('OFFICIAL_REMOVAL_REVIEW_REQUIRED');
-    return { ...old, entries, pendingReview: proposals.length, officialCheckedAt: new Date(this.now()).toISOString() };
+    return { ...old, entries, sourceWarning: undefined, pendingReview: proposals.length, officialCheckedAt: new Date(this.now()).toISOString() };
   }
-  async update() {
+  async update({ maxNewEntries = Infinity, deadline = Infinity, verifyOfficial = true, tolerateMissing = false, current } = {}) {
     if (this.updating) return this.updating;
     this.updating = (async () => {
-      const old = await this.load();
-      let candidate;
-      try { candidate = await this.checkOfficial(old); }
-      catch (e) { candidate = { ...old, sourceWarning: e.message.split(':')[0] }; }
+      const old = current || await this.load();
+      let candidate = old;
+      if (verifyOfficial) {
+        const pending = Number.isFinite(maxNewEntries) ? await this.store.read('pending-catalog') : null;
+        if (pending?.version === old.version && this.now() < pending.expiresAt) {
+          candidate = pending.candidate;
+        } else {
+          try { candidate = await this.checkOfficial(old); }
+          catch (e) { candidate = { ...old, sourceWarning: e.message.split(':')[0] }; }
+          if (Number.isFinite(maxNewEntries)) await this.store.write('pending-catalog', { version: old.version, expiresAt: this.now() + 3600000, candidate });
+        }
+      }
       const entries = [];
       try {
         const metadata = await this.store.read('metadata-cache') || {};
+        let fetched = 0;
         for (const e of candidate.entries) {
           const cached = metadata[e.stableId];
           let resolved;
-          if (cached && this.now() - Date.parse(cached.metadataVerifiedAt) < 23 * 3600000) {
+          if (cached && cached.originalTitle === e.originalTitle && cached.mediaType === e.mediaType &&
+              cached.season === e.season && String(cached.episodeRange) === String(e.episodeRange) &&
+              this.now() - Date.parse(cached.metadataVerifiedAt) < 23 * 3600000) {
             // Keep fresh chronology fields from the official list, but reuse expensive
             // IDs/episodes/artwork independently of the watched-state cache.
             resolved = { ...e, ...cached, timelineOrder: e.timelineOrder, timelineEra: e.timelineEra, chronologySource: e.chronologySource, lastVerifiedAt: e.lastVerifiedAt };
           } else {
-            resolved = await this.enrich(e);
+            if (fetched >= maxNewEntries || (fetched > 0 && this.now() >= deadline)) {
+              return { ...candidate, entries, metadataStatus: 'initializing', totalEntries: candidate.entries.length };
+            }
+            try { resolved = await this.enrich(e); }
+            catch (error) {
+              if (!tolerateMissing || !/^(IDENTITY_REVIEW_REQUIRED:|EPISODE_METADATA_INCOMPLETE:)/.test(error.message)) throw error;
+              resolved = { ...e, availabilityStatus: 'pending_metadata', metadataVerifiedAt: new Date(this.now()).toISOString() };
+            }
+            fetched++;
             metadata[e.stableId] = resolved;
             // Checkpoint initialization so a rate limit on item 80 doesn't cause
             // the next attempt to download items 1–79 again.

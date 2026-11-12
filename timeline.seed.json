@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-08.1",
+  "version": "2026-11-12.1",
   "sourcePublishedAt": "2026-10-22",
-  "updatedAt": "2026-11-08T00:00:00Z",
-  "metadataStatus": "requires-live-resolution",
+  "updatedAt": "2026-11-12T21:04:00+08:00",
+  "metadataStatus": "resolved",
   "entries": [
     {
       "stableId": "mcu-eyes-of-wakanda-s1",
@@ -13,14 +13,14 @@
       "searchYear": 2025,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 241388,
+      "imdbId": "tt13968252",
+      "traktId": 217575,
       "timelineOrder": 10,
       "timelineEra": "官方完整时间线第1位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-08-01T04:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -30,8 +30,37 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Eyes of Wakanda"
+      "metadataVerifiedAt": "2026-11-12T12:59:50.888Z",
+      "officialLabel": "Eyes of Wakanda",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:50.394Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2025-08-01T04:00:00.000Z",
+          "traktId": 11220023
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2025-08-01T04:00:00.000Z",
+          "traktId": 12496644
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2025-08-01T04:00:00.000Z",
+          "traktId": 12496645
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2025-08-01T04:00:00.000Z",
+          "traktId": 12496646
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-captain-america-the-first-avenger",
@@ -41,14 +70,14 @@
       "searchYear": 2011,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 1771,
+      "imdbId": "tt0458339",
+      "traktId": 1170,
       "timelineOrder": 20,
       "timelineEra": "官方完整时间线第2位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2011-07-22",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -58,8 +87,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Captain America: The First Avenger"
+      "metadataVerifiedAt": "2026-11-12T12:59:50.894Z",
+      "officialLabel": "Captain America: The First Avenger",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:50.385Z"
     },
     {
       "stableId": "mcu-marvel-studios-one-shot-agent-carter",
@@ -69,14 +100,14 @@
       "searchYear": 2013,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 211387,
+      "imdbId": "tt3067038",
+      "traktId": 130811,
       "timelineOrder": 30,
       "timelineEra": "官方完整时间线第3位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2013-09-03",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -86,11 +117,13 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:51.341Z",
       "officialLabel": "Marvel Studios One Shot: Agent Carter",
       "searchAliases": [
         "Marvel One-Shot: Agent Carter"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:50.890Z"
     },
     {
       "stableId": "mcu-captain-marvel",
@@ -100,14 +133,14 @@
       "searchYear": 2019,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 299537,
+      "imdbId": "tt4154664",
+      "traktId": 193963,
       "timelineOrder": 40,
       "timelineEra": "官方完整时间线第4位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2019-03-08",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -117,8 +150,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Captain Marvel"
+      "metadataVerifiedAt": "2026-11-12T12:59:51.832Z",
+      "officialLabel": "Captain Marvel",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:51.418Z"
     },
     {
       "stableId": "mcu-iron-man",
@@ -128,14 +163,14 @@
       "searchYear": 2008,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 1726,
+      "imdbId": "tt0371746",
+      "traktId": 1157,
       "timelineOrder": 50,
       "timelineEra": "官方完整时间线第5位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2008-05-02",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -145,8 +180,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Iron Man"
+      "metadataVerifiedAt": "2026-11-12T12:59:52.231Z",
+      "officialLabel": "Iron Man",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:51.771Z"
     },
     {
       "stableId": "mcu-iron-man-2",
@@ -156,14 +193,14 @@
       "searchYear": 2010,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 10138,
+      "imdbId": "tt1228705",
+      "traktId": 5355,
       "timelineOrder": 60,
       "timelineEra": "官方完整时间线第6位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2010-05-07",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -173,8 +210,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Iron Man 2"
+      "metadataVerifiedAt": "2026-11-12T12:59:52.792Z",
+      "officialLabel": "Iron Man 2",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:52.234Z"
     },
     {
       "stableId": "mcu-the-incredible-hulk",
@@ -184,14 +223,14 @@
       "searchYear": 2008,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 1724,
+      "imdbId": "tt0800080",
+      "traktId": 1155,
       "timelineOrder": 70,
       "timelineEra": "官方完整时间线第7位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2008-06-12",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -201,8 +240,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Incredible Hulk"
+      "metadataVerifiedAt": "2026-11-12T12:59:52.795Z",
+      "officialLabel": "The Incredible Hulk",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:52.275Z"
     },
     {
       "stableId": "mcu-marvel-studios-one-shot-a-funny-thing-happened-on-the-way-to-thor-s-hammer",
@@ -212,14 +253,14 @@
       "searchYear": 2011,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 76535,
+      "imdbId": "tt2011109",
+      "traktId": 56529,
       "timelineOrder": 80,
       "timelineEra": "官方完整时间线第8位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2011-10-25",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -229,11 +270,13 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:53.815Z",
       "officialLabel": "Marvel Studios One Shot: A Funny Thing Happened on the Way to Thor’s Hammer",
       "searchAliases": [
         "Marvel One-Shot: A Funny Thing Happened on the Way to Thor’s Hammer"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:53.284Z"
     },
     {
       "stableId": "mcu-thor",
@@ -243,14 +286,14 @@
       "searchYear": 2011,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 10195,
+      "imdbId": "tt0800369",
+      "traktId": 5408,
       "timelineOrder": 90,
       "timelineEra": "官方完整时间线第9位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2011-05-06",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -260,8 +303,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Thor"
+      "metadataVerifiedAt": "2026-11-12T12:59:53.819Z",
+      "officialLabel": "Thor",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:53.288Z"
     },
     {
       "stableId": "mcu-marvel-studios-one-shot-the-consultant",
@@ -271,14 +316,14 @@
       "searchYear": 2011,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 76122,
+      "imdbId": "tt2011118",
+      "traktId": 56188,
       "timelineOrder": 100,
       "timelineEra": "官方完整时间线第10位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2011-09-13",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -288,11 +333,13 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:54.331Z",
       "officialLabel": "Marvel Studios One Shot: The Consultant",
       "searchAliases": [
         "Marvel One-Shot: The Consultant"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:53.811Z"
     },
     {
       "stableId": "mcu-the-avengers",
@@ -302,14 +349,14 @@
       "searchYear": 2012,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 24428,
+      "imdbId": "tt0848228",
+      "traktId": 14701,
       "timelineOrder": 110,
       "timelineEra": "官方完整时间线第11位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2012-05-04",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -319,8 +366,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Avengers"
+      "metadataVerifiedAt": "2026-11-12T12:59:54.852Z",
+      "officialLabel": "The Avengers",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:54.328Z"
     },
     {
       "stableId": "mcu-marvel-studios-one-shot-item-47",
@@ -330,14 +379,14 @@
       "searchYear": 2012,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 119569,
+      "imdbId": "tt2247732",
+      "traktId": 83096,
       "timelineOrder": 120,
       "timelineEra": "官方完整时间线第12位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2012-09-25",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -347,11 +396,13 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:55.159Z",
       "officialLabel": "Marvel Studios One Shot: Item 47",
       "searchAliases": [
         "Marvel One-Shot: Item 47"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:54.728Z"
     },
     {
       "stableId": "mcu-thor-the-dark-world",
@@ -361,14 +412,14 @@
       "searchYear": 2013,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 76338,
+      "imdbId": "tt1981115",
+      "traktId": 56358,
       "timelineOrder": 130,
       "timelineEra": "官方完整时间线第13位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2013-11-08",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -378,8 +429,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Thor: The Dark World"
+      "metadataVerifiedAt": "2026-11-12T12:59:55.374Z",
+      "officialLabel": "Thor: The Dark World",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:54.855Z"
     },
     {
       "stableId": "mcu-iron-man-3",
@@ -389,14 +442,14 @@
       "searchYear": 2013,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 68721,
+      "imdbId": "tt1300854",
+      "traktId": 50134,
       "timelineOrder": 140,
       "timelineEra": "官方完整时间线第14位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2013-05-03",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -406,8 +459,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Iron Man 3"
+      "metadataVerifiedAt": "2026-11-12T12:59:55.767Z",
+      "officialLabel": "Iron Man 3",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:55.270Z"
     },
     {
       "stableId": "mcu-marvel-studios-one-shot-all-hail-the-king",
@@ -417,14 +472,14 @@
       "searchYear": 2014,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 253980,
+      "imdbId": "tt3438640",
+      "traktId": 154423,
       "timelineOrder": 150,
       "timelineEra": "官方完整时间线第15位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2014-02-04",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -434,11 +489,13 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:56.662Z",
       "officialLabel": "Marvel Studios One Shot: All Hail the King",
       "searchAliases": [
         "Marvel One-Shot: All Hail the King"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:56.142Z"
     },
     {
       "stableId": "mcu-captain-america-the-winter-soldier",
@@ -448,14 +505,14 @@
       "searchYear": 2014,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 100402,
+      "imdbId": "tt1843866",
+      "traktId": 72297,
       "timelineOrder": 160,
       "timelineEra": "官方完整时间线第16位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2014-04-04",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -465,8 +522,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Captain America: The Winter Soldier"
+      "metadataVerifiedAt": "2026-11-12T12:59:56.304Z",
+      "officialLabel": "Captain America: The Winter Soldier",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:55.801Z"
     },
     {
       "stableId": "mcu-guardians-of-the-galaxy",
@@ -476,14 +535,14 @@
       "searchYear": 2014,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 118340,
+      "imdbId": "tt2015381",
+      "traktId": 82405,
       "timelineOrder": 170,
       "timelineEra": "官方完整时间线第17位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2014-08-01",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -493,8 +552,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Guardians of the Galaxy"
+      "metadataVerifiedAt": "2026-11-12T12:59:56.665Z",
+      "officialLabel": "Guardians of the Galaxy",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:56.188Z"
     },
     {
       "stableId": "mcu-guardians-of-the-galaxy-vol-2",
@@ -504,14 +565,14 @@
       "searchYear": 2017,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 283995,
+      "imdbId": "tt3896198",
+      "traktId": 181256,
       "timelineOrder": 180,
       "timelineEra": "官方完整时间线第18位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2017-05-05",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -521,8 +582,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Guardians of the Galaxy Vol. 2"
+      "metadataVerifiedAt": "2026-11-12T12:59:57.256Z",
+      "officialLabel": "Guardians of the Galaxy Vol. 2",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:56.830Z"
     },
     {
       "stableId": "mcu-i-am-groot-s1",
@@ -532,14 +595,14 @@
       "searchYear": 2022,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 232125,
+      "imdbId": "tt13623148",
+      "traktId": 207809,
       "timelineOrder": 190,
       "timelineEra": "官方完整时间线第19位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-08-10T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -549,8 +612,43 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "I Am Groot S1"
+      "metadataVerifiedAt": "2026-11-12T12:59:57.510Z",
+      "officialLabel": "I Am Groot S1",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:57.085Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2022-08-10T07:00:00.000Z",
+          "traktId": 10810068
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2022-08-10T07:00:00.000Z",
+          "traktId": 10810069
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2022-08-10T07:00:00.000Z",
+          "traktId": 10810070
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2022-08-10T07:00:00.000Z",
+          "traktId": 10810071
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2022-08-10T07:00:00.000Z",
+          "traktId": 10810072
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-i-am-groot-s2",
@@ -560,14 +658,14 @@
       "searchYear": 2022,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 232125,
+      "imdbId": "tt13623148",
+      "traktId": 207809,
       "timelineOrder": 200,
       "timelineEra": "官方完整时间线第20位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-09-06T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -577,8 +675,43 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "I Am Groot S2"
+      "metadataVerifiedAt": "2026-11-12T12:59:57.504Z",
+      "officialLabel": "I Am Groot S2",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:57.095Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2023-09-06T07:00:00.000Z",
+          "traktId": 10819560
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2023-09-06T07:00:00.000Z",
+          "traktId": 10819561
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2023-09-06T07:00:00.000Z",
+          "traktId": 10819562
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2023-09-06T07:00:00.000Z",
+          "traktId": 10819563
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2023-09-06T07:00:00.000Z",
+          "traktId": 10819564
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-daredevil-s1",
@@ -588,14 +721,14 @@
       "searchYear": 2015,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 61889,
+      "imdbId": "tt3322312",
+      "traktId": 77938,
       "timelineOrder": 210,
       "timelineEra": "官方完整时间线第21位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2015-04-10T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -605,11 +738,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:58.139Z",
       "officialLabel": "Daredevil S1",
       "searchAliases": [
         "Marvel's Daredevil"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:57.711Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693257
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693258
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693259
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693260
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693261
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693262
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693263
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693264
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693265
+        },
+        {
+          "season": 1,
+          "number": 10,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693266
+        },
+        {
+          "season": 1,
+          "number": 11,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693267
+        },
+        {
+          "season": 1,
+          "number": 12,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693268
+        },
+        {
+          "season": 1,
+          "number": 13,
+          "firstAired": "2015-04-10T07:00:00.000Z",
+          "traktId": 1693269
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-jessica-jones-s1",
@@ -619,14 +835,14 @@
       "searchYear": 2015,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 38472,
+      "imdbId": "tt2357547",
+      "traktId": 79385,
       "timelineOrder": 220,
       "timelineEra": "官方完整时间线第22位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2015-11-20T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -636,11 +852,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T12:59:59.433Z",
       "officialLabel": "Jessica Jones S1",
       "searchAliases": [
         "Marvel's Jessica Jones"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:58.940Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1732378
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793740
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793741
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793742
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793743
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793744
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793745
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793746
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793747
+        },
+        {
+          "season": 1,
+          "number": 10,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793748
+        },
+        {
+          "season": 1,
+          "number": 11,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793749
+        },
+        {
+          "season": 1,
+          "number": 12,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793750
+        },
+        {
+          "season": 1,
+          "number": 13,
+          "firstAired": "2015-11-20T08:00:00.000Z",
+          "traktId": 1793751
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-avengers-age-of-ultron",
@@ -650,14 +949,14 @@
       "searchYear": 2015,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 99861,
+      "imdbId": "tt2395427",
+      "traktId": 71938,
       "timelineOrder": 230,
       "timelineEra": "官方完整时间线第23位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2015-05-01",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -667,8 +966,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Avengers: Age of Ultron"
+      "metadataVerifiedAt": "2026-11-12T12:59:59.438Z",
+      "officialLabel": "Avengers: Age of Ultron",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:58.950Z"
     },
     {
       "stableId": "mcu-ant-man",
@@ -678,14 +979,14 @@
       "searchYear": 2015,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 102899,
+      "imdbId": "tt0478970",
+      "traktId": 73582,
       "timelineOrder": 240,
       "timelineEra": "官方完整时间线第24位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2015-07-17",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -695,8 +996,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Ant-Man"
+      "metadataVerifiedAt": "2026-11-12T12:59:59.974Z",
+      "officialLabel": "Ant-Man",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:59.569Z"
     },
     {
       "stableId": "mcu-daredevil-s2",
@@ -706,14 +1009,14 @@
       "searchYear": 2015,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 61889,
+      "imdbId": "tt3322312",
+      "traktId": 77938,
       "timelineOrder": 250,
       "timelineEra": "官方完整时间线第25位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2016-03-18T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -723,11 +1026,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:00.403Z",
       "officialLabel": "Daredevil S2",
       "searchAliases": [
         "Marvel's Daredevil"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T12:59:59.965Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2022277
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113646
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113649
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113652
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113654
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113655
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113657
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113658
+        },
+        {
+          "season": 2,
+          "number": 9,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113659
+        },
+        {
+          "season": 2,
+          "number": 10,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113660
+        },
+        {
+          "season": 2,
+          "number": 11,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113661
+        },
+        {
+          "season": 2,
+          "number": 12,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113662
+        },
+        {
+          "season": 2,
+          "number": 13,
+          "firstAired": "2016-03-18T07:00:00.000Z",
+          "traktId": 2113663
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-luke-cage-s1",
@@ -737,14 +1123,14 @@
       "searchYear": 2016,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 62126,
+      "imdbId": "tt3322314",
+      "traktId": 79382,
       "timelineOrder": 260,
       "timelineEra": "官方完整时间线第26位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2016-09-30T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -754,11 +1140,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:00.920Z",
       "officialLabel": "Luke Cage S1",
       "searchAliases": [
         "Marvel's Luke Cage"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:00.477Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1732616
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832848
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832849
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832850
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832851
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832852
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832853
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832854
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832855
+        },
+        {
+          "season": 1,
+          "number": 10,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832856
+        },
+        {
+          "season": 1,
+          "number": 11,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832857
+        },
+        {
+          "season": 1,
+          "number": 12,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832858
+        },
+        {
+          "season": 1,
+          "number": 13,
+          "firstAired": "2016-09-30T07:00:00.000Z",
+          "traktId": 1832859
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-iron-fist-s1",
@@ -768,14 +1237,14 @@
       "searchYear": 2017,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 62127,
+      "imdbId": "tt3322310",
+      "traktId": 112082,
       "timelineOrder": 270,
       "timelineEra": "官方完整时间线第27位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2017-03-17T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -785,11 +1254,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:02.006Z",
       "officialLabel": "Iron Fist S1",
       "searchAliases": [
         "Marvel's Iron Fist"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:01.143Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2361975
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478635
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478636
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478637
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478638
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478639
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478640
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478641
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478642
+        },
+        {
+          "season": 1,
+          "number": 10,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478643
+        },
+        {
+          "season": 1,
+          "number": 11,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478644
+        },
+        {
+          "season": 1,
+          "number": 12,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478645
+        },
+        {
+          "season": 1,
+          "number": 13,
+          "firstAired": "2017-03-17T07:00:00.000Z",
+          "traktId": 2478646
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-the-defenders-s1",
@@ -799,14 +1351,14 @@
       "searchYear": 2017,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 62285,
+      "imdbId": "tt4230076",
+      "traktId": 118025,
       "timelineOrder": 280,
       "timelineEra": "官方完整时间线第28位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2017-08-18T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -816,11 +1368,64 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:02.232Z",
       "officialLabel": "The Defenders",
       "searchAliases": [
         "Marvel's Defenders"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:01.798Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542085
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542086
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542087
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542088
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542089
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542090
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542091
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2017-08-18T07:00:00.000Z",
+          "traktId": 2542092
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-captain-america-civil-war",
@@ -830,14 +1435,14 @@
       "searchYear": 2016,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 271110,
+      "imdbId": "tt3498820",
+      "traktId": 169105,
       "timelineOrder": 290,
       "timelineEra": "官方完整时间线第29位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2016-05-06",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -847,8 +1452,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Captain America: Civil War"
+      "metadataVerifiedAt": "2026-11-12T13:00:02.743Z",
+      "officialLabel": "Captain America: Civil War",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:02.323Z"
     },
     {
       "stableId": "mcu-black-widow",
@@ -858,14 +1465,14 @@
       "searchYear": 2021,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 497698,
+      "imdbId": "tt3480822",
+      "traktId": 344686,
       "timelineOrder": 300,
       "timelineEra": "官方完整时间线第30位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-07-09",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -875,8 +1482,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Black Widow"
+      "metadataVerifiedAt": "2026-11-12T13:00:03.648Z",
+      "officialLabel": "Black Widow",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:03.239Z"
     },
     {
       "stableId": "mcu-black-panther",
@@ -886,14 +1495,14 @@
       "searchYear": 2018,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 284054,
+      "imdbId": "tt1825683",
+      "traktId": 181313,
       "timelineOrder": 310,
       "timelineEra": "官方完整时间线第31位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-02-16",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -903,8 +1512,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Black Panther"
+      "metadataVerifiedAt": "2026-11-12T13:00:03.779Z",
+      "officialLabel": "Black Panther",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:03.380Z"
     },
     {
       "stableId": "mcu-spider-man-homecoming",
@@ -914,14 +1525,14 @@
       "searchYear": 2017,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 315635,
+      "imdbId": "tt2250912",
+      "traktId": 196213,
       "timelineOrder": 320,
       "timelineEra": "官方完整时间线第32位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2017-07-07",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -931,8 +1542,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Spider-Man: Homecoming"
+      "metadataVerifiedAt": "2026-11-12T13:00:04.061Z",
+      "officialLabel": "Spider-Man: Homecoming",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:03.624Z"
     },
     {
       "stableId": "mcu-the-punisher-s1",
@@ -942,14 +1555,14 @@
       "searchYear": 2017,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 67178,
+      "imdbId": "tt5675620",
+      "traktId": 112663,
       "timelineOrder": 330,
       "timelineEra": "官方完整时间线第33位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2017-11-17T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -959,11 +1572,93 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:02:58.272Z",
       "officialLabel": "The Punisher S1",
       "searchAliases": [
         "Marvel's Punisher"
-      ]
+      ],
+      "identitySource": "Reviewed Trakt title, year and external media IDs",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741705
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741706
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741707
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741708
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741709
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741710
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741711
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741712
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741713
+        },
+        {
+          "season": 1,
+          "number": 10,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741714
+        },
+        {
+          "season": 1,
+          "number": 11,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741715
+        },
+        {
+          "season": 1,
+          "number": 12,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741716
+        },
+        {
+          "season": 1,
+          "number": 13,
+          "firstAired": "2017-11-17T08:00:00.000Z",
+          "traktId": 2741717
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-doctor-strange",
@@ -973,14 +1668,14 @@
       "searchYear": 2016,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 284052,
+      "imdbId": "tt1211837",
+      "traktId": 181311,
       "timelineOrder": 340,
       "timelineEra": "官方完整时间线第34位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2016-11-04",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -990,8 +1685,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Doctor Strange"
+      "metadataVerifiedAt": "2026-11-12T13:00:04.815Z",
+      "officialLabel": "Doctor Strange",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:04.296Z"
     },
     {
       "stableId": "mcu-jessica-jones-s2",
@@ -1001,14 +1698,14 @@
       "searchYear": 2015,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 38472,
+      "imdbId": "tt2357547",
+      "traktId": 79385,
       "timelineOrder": 350,
       "timelineEra": "官方完整时间线第35位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-03-08T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1018,11 +1715,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:04.935Z",
       "officialLabel": "Jessica Jones S2",
       "searchAliases": [
         "Marvel's Jessica Jones"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:04.529Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2513639
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917123
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917124
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917125
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917126
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917127
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917128
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917129
+        },
+        {
+          "season": 2,
+          "number": 9,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917130
+        },
+        {
+          "season": 2,
+          "number": 10,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917131
+        },
+        {
+          "season": 2,
+          "number": 11,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917132
+        },
+        {
+          "season": 2,
+          "number": 12,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917133
+        },
+        {
+          "season": 2,
+          "number": 13,
+          "firstAired": "2018-03-08T08:00:00.000Z",
+          "traktId": 2917134
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-luke-cage-s2",
@@ -1032,14 +1812,14 @@
       "searchYear": 2016,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 62126,
+      "imdbId": "tt3322314",
+      "traktId": 79382,
       "timelineOrder": 360,
       "timelineEra": "官方完整时间线第36位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-06-22T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1049,11 +1829,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:04.952Z",
       "officialLabel": "Luke Cage S2",
       "searchAliases": [
         "Marvel's Luke Cage"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:04.535Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2680360
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978405
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978406
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978407
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978408
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978409
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978410
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978411
+        },
+        {
+          "season": 2,
+          "number": 9,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978412
+        },
+        {
+          "season": 2,
+          "number": 10,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978413
+        },
+        {
+          "season": 2,
+          "number": 11,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978414
+        },
+        {
+          "season": 2,
+          "number": 12,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978415
+        },
+        {
+          "season": 2,
+          "number": 13,
+          "firstAired": "2018-06-22T07:00:00.000Z",
+          "traktId": 2978416
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-iron-fist-s2",
@@ -1063,14 +1926,14 @@
       "searchYear": 2017,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 62127,
+      "imdbId": "tt3322310",
+      "traktId": 112082,
       "timelineOrder": 370,
       "timelineEra": "官方完整时间线第37位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-09-07T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1080,11 +1943,76 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:05.731Z",
       "officialLabel": "Iron Fist S2",
       "searchAliases": [
         "Marvel's Iron Fist"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:05.246Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3089338
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113795
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113810
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113823
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113845
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113861
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113864
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113866
+        },
+        {
+          "season": 2,
+          "number": 9,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113871
+        },
+        {
+          "season": 2,
+          "number": 10,
+          "firstAired": "2018-09-07T07:00:00.000Z",
+          "traktId": 3113889
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-daredevil-s3",
@@ -1094,14 +2022,14 @@
       "searchYear": 2015,
       "season": 3,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 61889,
+      "imdbId": "tt3322312",
+      "traktId": 77938,
       "timelineOrder": 380,
       "timelineEra": "官方完整时间线第38位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-10-19T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1111,11 +2039,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:06.914Z",
       "officialLabel": "Daredevil S3",
       "searchAliases": [
         "Marvel's Daredevil"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:06.400Z",
+      "episodes": [
+        {
+          "season": 3,
+          "number": 1,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3153793
+        },
+        {
+          "season": 3,
+          "number": 2,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185712
+        },
+        {
+          "season": 3,
+          "number": 3,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185713
+        },
+        {
+          "season": 3,
+          "number": 4,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185714
+        },
+        {
+          "season": 3,
+          "number": 5,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185715
+        },
+        {
+          "season": 3,
+          "number": 6,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185716
+        },
+        {
+          "season": 3,
+          "number": 7,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185717
+        },
+        {
+          "season": 3,
+          "number": 8,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185718
+        },
+        {
+          "season": 3,
+          "number": 9,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185719
+        },
+        {
+          "season": 3,
+          "number": 10,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185720
+        },
+        {
+          "season": 3,
+          "number": 11,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185721
+        },
+        {
+          "season": 3,
+          "number": 12,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185722
+        },
+        {
+          "season": 3,
+          "number": 13,
+          "firstAired": "2018-10-19T07:00:00.000Z",
+          "traktId": 3185723
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-thor-ragnarok",
@@ -1125,14 +2136,14 @@
       "searchYear": 2017,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 284053,
+      "imdbId": "tt3501632",
+      "traktId": 181312,
       "timelineOrder": 390,
       "timelineEra": "官方完整时间线第39位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2017-11-03",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1142,8 +2153,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Thor: Ragnarok"
+      "metadataVerifiedAt": "2026-11-12T13:00:06.913Z",
+      "officialLabel": "Thor: Ragnarok",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:06.406Z"
     },
     {
       "stableId": "mcu-the-punisher-s2",
@@ -1153,14 +2166,14 @@
       "searchYear": 2017,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 67178,
+      "imdbId": "tt5675620",
+      "traktId": 112663,
       "timelineOrder": 400,
       "timelineEra": "官方完整时间线第40位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2019-01-18T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1170,11 +2183,93 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:02:58.340Z",
       "officialLabel": "The Punisher S2",
       "searchAliases": [
         "Marvel's Punisher"
-      ]
+      ],
+      "identitySource": "Reviewed Trakt title, year and external media IDs",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3300128
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313151
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313152
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313153
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313154
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313155
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313159
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313160
+        },
+        {
+          "season": 2,
+          "number": 9,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313161
+        },
+        {
+          "season": 2,
+          "number": 10,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313162
+        },
+        {
+          "season": 2,
+          "number": 11,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313164
+        },
+        {
+          "season": 2,
+          "number": 12,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313165
+        },
+        {
+          "season": 2,
+          "number": 13,
+          "firstAired": "2019-01-18T08:00:00.000Z",
+          "traktId": 3313166
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-jessica-jones-s3",
@@ -1184,14 +2279,14 @@
       "searchYear": 2015,
       "season": 3,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 38472,
+      "imdbId": "tt2357547",
+      "traktId": 79385,
       "timelineOrder": 410,
       "timelineEra": "官方完整时间线第41位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2019-06-14T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1201,11 +2296,94 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
+      "metadataVerifiedAt": "2026-11-12T13:00:07.814Z",
       "officialLabel": "Jessica Jones S3",
       "searchAliases": [
         "Marvel's Jessica Jones"
-      ]
+      ],
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:07.322Z",
+      "episodes": [
+        {
+          "season": 3,
+          "number": 1,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3550459
+        },
+        {
+          "season": 3,
+          "number": 2,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551300
+        },
+        {
+          "season": 3,
+          "number": 3,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551302
+        },
+        {
+          "season": 3,
+          "number": 4,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551304
+        },
+        {
+          "season": 3,
+          "number": 5,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551306
+        },
+        {
+          "season": 3,
+          "number": 6,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551308
+        },
+        {
+          "season": 3,
+          "number": 7,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551311
+        },
+        {
+          "season": 3,
+          "number": 8,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551313
+        },
+        {
+          "season": 3,
+          "number": 9,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551316
+        },
+        {
+          "season": 3,
+          "number": 10,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551318
+        },
+        {
+          "season": 3,
+          "number": 11,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551320
+        },
+        {
+          "season": 3,
+          "number": 12,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551322
+        },
+        {
+          "season": 3,
+          "number": 13,
+          "firstAired": "2019-06-14T07:00:00.000Z",
+          "traktId": 3551324
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-ant-man-and-the-wasp",
@@ -1215,14 +2393,14 @@
       "searchYear": 2018,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 363088,
+      "imdbId": "tt5095030",
+      "traktId": 223262,
       "timelineOrder": 420,
       "timelineEra": "官方完整时间线第42位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-07-06",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1232,8 +2410,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Ant-Man and the Wasp"
+      "metadataVerifiedAt": "2026-11-12T13:00:08.197Z",
+      "officialLabel": "Ant-Man and the Wasp",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:07.753Z"
     },
     {
       "stableId": "mcu-avengers-infinity-war",
@@ -1243,14 +2423,14 @@
       "searchYear": 2018,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 299536,
+      "imdbId": "tt4154756",
+      "traktId": 191797,
       "timelineOrder": 430,
       "timelineEra": "官方完整时间线第43位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2018-04-27",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1260,8 +2440,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Avengers: Infinity War"
+      "metadataVerifiedAt": "2026-11-12T13:00:09.008Z",
+      "officialLabel": "Avengers: Infinity War",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:08.500Z"
     },
     {
       "stableId": "mcu-avengers-endgame",
@@ -1271,14 +2453,14 @@
       "searchYear": 2019,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 299534,
+      "imdbId": "tt4154796",
+      "traktId": 191798,
       "timelineOrder": 440,
       "timelineEra": "官方完整时间线第44位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2019-04-26",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1288,8 +2470,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Avengers: Endgame"
+      "metadataVerifiedAt": "2026-11-12T13:00:09.276Z",
+      "officialLabel": "Avengers: Endgame",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:08.759Z"
     },
     {
       "stableId": "mcu-loki-s1",
@@ -1299,14 +2483,14 @@
       "searchYear": 2021,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 84958,
+      "imdbId": "tt9140554",
+      "traktId": 146535,
       "timelineOrder": 450,
       "timelineEra": "官方完整时间线第45位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-06-10T01:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1316,8 +2500,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Loki S1"
+      "metadataVerifiedAt": "2026-11-12T13:00:09.833Z",
+      "officialLabel": "Loki S1",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:09.389Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2021-06-10T01:00:00.000Z",
+          "traktId": 4638350
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2021-06-17T01:00:00.000Z",
+          "traktId": 4878206
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2021-06-24T01:00:00.000Z",
+          "traktId": 4878227
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2021-07-01T01:00:00.000Z",
+          "traktId": 4878243
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2021-07-08T01:00:00.000Z",
+          "traktId": 4878255
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2021-07-15T01:00:00.000Z",
+          "traktId": 4878263
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-what-if-s1",
@@ -1327,14 +2552,14 @@
       "searchYear": 2021,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 91363,
+      "imdbId": "tt10168312",
+      "traktId": 146522,
       "timelineOrder": 460,
       "timelineEra": "官方完整时间线第46位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-08-11T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1344,8 +2569,67 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "What If…? S1"
+      "metadataVerifiedAt": "2026-11-12T13:00:09.956Z",
+      "officialLabel": "What If…? S1",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:09.546Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2021-08-11T07:00:00.000Z",
+          "traktId": 4912655
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2021-08-18T07:00:00.000Z",
+          "traktId": 5288287
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2021-08-25T07:00:00.000Z",
+          "traktId": 5288288
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2021-09-01T07:00:00.000Z",
+          "traktId": 5288289
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2021-09-08T07:00:00.000Z",
+          "traktId": 5298414
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2021-09-15T07:00:00.000Z",
+          "traktId": 5298417
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2021-09-22T07:00:00.000Z",
+          "traktId": 5298420
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2021-09-29T07:00:00.000Z",
+          "traktId": 5298421
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2021-10-06T07:00:00.000Z",
+          "traktId": 5298422
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-marvel-zombies-s1",
@@ -1355,14 +2639,14 @@
       "searchYear": 2025,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 138505,
+      "imdbId": "tt16027014",
+      "traktId": 191189,
       "timelineOrder": 470,
       "timelineEra": "官方完整时间线第47位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-09-24T04:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1372,8 +2656,37 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Marvel Zombies"
+      "metadataVerifiedAt": "2026-11-12T13:00:10.320Z",
+      "officialLabel": "Marvel Zombies",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:09.901Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2025-09-24T04:00:00.000Z",
+          "traktId": 5691092
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2025-09-24T04:00:00.000Z",
+          "traktId": 12497123
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2025-09-24T04:00:00.000Z",
+          "traktId": 12497124
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2025-09-24T04:00:00.000Z",
+          "traktId": 12497125
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-wandavision-s1",
@@ -1383,14 +2696,14 @@
       "searchYear": 2021,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 85271,
+      "imdbId": "tt9140560",
+      "traktId": 146518,
       "timelineOrder": 480,
       "timelineEra": "官方完整时间线第48位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-01-15T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1400,8 +2713,67 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "WandaVision"
+      "metadataVerifiedAt": "2026-11-12T13:00:11.877Z",
+      "officialLabel": "WandaVision",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:11.444Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2021-01-15T08:00:00.000Z",
+          "traktId": 4588005
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2021-01-15T08:00:00.000Z",
+          "traktId": 4590805
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2021-01-22T08:00:00.000Z",
+          "traktId": 4590807
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2021-01-29T08:00:00.000Z",
+          "traktId": 4590808
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2021-02-05T08:00:00.000Z",
+          "traktId": 4590810
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2021-02-12T08:00:00.000Z",
+          "traktId": 4590813
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2021-02-19T08:00:00.000Z",
+          "traktId": 4673248
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2021-02-26T08:00:00.000Z",
+          "traktId": 4673249
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2021-03-05T08:00:00.000Z",
+          "traktId": 4697985
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-shang-chi-and-the-legend-of-the-ten-rings",
@@ -1411,14 +2783,14 @@
       "searchYear": 2021,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 566525,
+      "imdbId": "tt9376612",
+      "traktId": 416151,
       "timelineOrder": 490,
       "timelineEra": "官方完整时间线第49位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-09-03",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1428,8 +2800,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Shang-Chi and the Legend of the Ten Rings"
+      "metadataVerifiedAt": "2026-11-12T13:00:12.049Z",
+      "officialLabel": "Shang-Chi and the Legend of the Ten Rings",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:11.631Z"
     },
     {
       "stableId": "mcu-the-falcon-and-the-winter-soldier-s1",
@@ -1439,14 +2813,14 @@
       "searchYear": 2021,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 88396,
+      "imdbId": "tt9208876",
+      "traktId": 146573,
       "timelineOrder": 500,
       "timelineEra": "官方完整时间线第50位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-03-19T04:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1456,8 +2830,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Falcon and the Winter Soldier"
+      "metadataVerifiedAt": "2026-11-12T13:00:12.385Z",
+      "officialLabel": "The Falcon and the Winter Soldier",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:11.946Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2021-03-19T04:00:00.000Z",
+          "traktId": 4636556
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2021-03-26T04:00:00.000Z",
+          "traktId": 4638345
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2021-04-02T04:00:00.000Z",
+          "traktId": 4638346
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2021-04-09T04:00:00.000Z",
+          "traktId": 4644287
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2021-04-16T04:00:00.000Z",
+          "traktId": 4644288
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2021-04-23T04:00:00.000Z",
+          "traktId": 4644289
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-spider-man-far-from-home",
@@ -1467,14 +2882,14 @@
       "searchYear": 2019,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 429617,
+      "imdbId": "tt6320628",
+      "traktId": 273537,
       "timelineOrder": 510,
       "timelineEra": "官方完整时间线第51位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2019-07-02",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1484,8 +2899,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Spider-Man: Far From Home"
+      "metadataVerifiedAt": "2026-11-12T13:00:13.202Z",
+      "officialLabel": "Spider-Man: Far From Home",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:12.676Z"
     },
     {
       "stableId": "mcu-eternals",
@@ -1495,14 +2912,14 @@
       "searchYear": 2021,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 524434,
+      "imdbId": "tt9032400",
+      "traktId": 372798,
       "timelineOrder": 520,
       "timelineEra": "官方完整时间线第52位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-11-05",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1512,8 +2929,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Eternals"
+      "metadataVerifiedAt": "2026-11-12T13:00:13.725Z",
+      "officialLabel": "Eternals",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:13.277Z"
     },
     {
       "stableId": "mcu-spider-man-no-way-home",
@@ -1523,14 +2942,14 @@
       "searchYear": 2021,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 634649,
+      "imdbId": "tt10872600",
+      "traktId": 474180,
       "timelineOrder": 530,
       "timelineEra": "官方完整时间线第53位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-12-17",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1540,8 +2959,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Spider-Man: No Way Home"
+      "metadataVerifiedAt": "2026-11-12T13:00:14.251Z",
+      "officialLabel": "Spider-Man: No Way Home",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:13.805Z"
     },
     {
       "stableId": "mcu-doctor-strange-in-the-multiverse-of-madness",
@@ -1551,14 +2972,14 @@
       "searchYear": 2022,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 453395,
+      "imdbId": "tt9419884",
+      "traktId": 299910,
       "timelineOrder": 540,
       "timelineEra": "官方完整时间线第54位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-05-06",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1568,8 +2989,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Doctor Strange in the Multiverse of Madness"
+      "metadataVerifiedAt": "2026-11-12T13:00:14.539Z",
+      "officialLabel": "Doctor Strange in the Multiverse of Madness",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:14.060Z"
     },
     {
       "stableId": "mcu-hawkeye-s1",
@@ -1579,14 +3002,14 @@
       "searchYear": 2021,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 88329,
+      "imdbId": "tt10160804",
+      "traktId": 146415,
       "timelineOrder": 550,
       "timelineEra": "官方完整时间线第55位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2021-11-24T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1596,8 +3019,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Hawkeye"
+      "metadataVerifiedAt": "2026-11-12T13:00:14.805Z",
+      "officialLabel": "Hawkeye",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:14.378Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2021-11-24T08:00:00.000Z",
+          "traktId": 4720857
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2021-11-24T08:00:00.000Z",
+          "traktId": 5612882
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2021-12-01T08:00:00.000Z",
+          "traktId": 5612883
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2021-12-08T08:00:00.000Z",
+          "traktId": 5646303
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2021-12-15T08:00:00.000Z",
+          "traktId": 5646310
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2021-12-22T08:00:00.000Z",
+          "traktId": 5646312
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-moon-knight-s1",
@@ -1607,14 +3071,14 @@
       "searchYear": 2022,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 92749,
+      "imdbId": "tt10234724",
+      "traktId": 151840,
       "timelineOrder": 560,
       "timelineEra": "官方完整时间线第56位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-03-30T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1624,8 +3088,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Moon Knight"
+      "metadataVerifiedAt": "2026-11-12T13:00:15.299Z",
+      "officialLabel": "Moon Knight",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:14.823Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2022-03-30T07:00:00.000Z",
+          "traktId": 4735538
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2022-04-06T07:00:00.000Z",
+          "traktId": 5838762
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2022-04-13T07:00:00.000Z",
+          "traktId": 5838763
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2022-04-20T07:00:00.000Z",
+          "traktId": 5838764
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2022-04-27T07:00:00.000Z",
+          "traktId": 5838765
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2022-05-04T07:00:00.000Z",
+          "traktId": 5838766
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-black-panther-wakanda-forever",
@@ -1635,14 +3140,14 @@
       "searchYear": 2022,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 505642,
+      "imdbId": "tt9114286",
+      "traktId": 352796,
       "timelineOrder": 570,
       "timelineEra": "官方完整时间线第57位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-11-11",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1652,8 +3157,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Black Panther: Wakanda Forever"
+      "metadataVerifiedAt": "2026-11-12T13:00:15.658Z",
+      "officialLabel": "Black Panther: Wakanda Forever",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:15.144Z"
     },
     {
       "stableId": "mcu-echo-s1",
@@ -1663,14 +3170,14 @@
       "searchYear": 2024,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 122226,
+      "imdbId": "tt13966962",
+      "traktId": 179636,
       "timelineOrder": 580,
       "timelineEra": "官方完整时间线第58位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2024-01-10T02:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1680,8 +3187,43 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Echo"
+      "metadataVerifiedAt": "2026-11-12T13:00:16.765Z",
+      "officialLabel": "Echo",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:16.245Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2024-01-10T02:00:00.000Z",
+          "traktId": 5132447
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2024-01-10T02:00:00.000Z",
+          "traktId": 10927161
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2024-01-10T02:00:00.000Z",
+          "traktId": 10927162
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2024-01-10T02:00:00.000Z",
+          "traktId": 10927163
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2024-01-10T02:00:00.000Z",
+          "traktId": 10927164
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-she-hulk-attorney-at-law-s1",
@@ -1691,14 +3233,14 @@
       "searchYear": 2022,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 92783,
+      "imdbId": "tt10857160",
+      "traktId": 151854,
       "timelineOrder": 590,
       "timelineEra": "官方完整时间线第59位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-08-18T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1708,8 +3250,67 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "She-Hulk: Attorney at Law"
+      "metadataVerifiedAt": "2026-11-12T13:00:16.866Z",
+      "officialLabel": "She-Hulk: Attorney at Law",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:16.359Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2022-08-18T07:00:00.000Z",
+          "traktId": 4735545
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2022-08-25T07:00:00.000Z",
+          "traktId": 6373968
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2022-09-01T07:00:00.000Z",
+          "traktId": 6373973
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2022-09-08T07:00:00.000Z",
+          "traktId": 6373980
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2022-09-15T07:00:00.000Z",
+          "traktId": 6373986
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2022-09-22T07:00:00.000Z",
+          "traktId": 6373990
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2022-09-29T07:00:00.000Z",
+          "traktId": 6373993
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2022-10-06T07:00:00.000Z",
+          "traktId": 6373996
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2022-10-13T07:00:00.000Z",
+          "traktId": 6373999
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-ms-marvel-s1",
@@ -1719,14 +3320,14 @@
       "searchYear": 2022,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 92782,
+      "imdbId": "tt10857164",
+      "traktId": 151853,
       "timelineOrder": 600,
       "timelineEra": "官方完整时间线第60位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-06-08T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1736,8 +3337,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Ms. Marvel"
+      "metadataVerifiedAt": "2026-11-12T13:00:17.299Z",
+      "officialLabel": "Ms. Marvel",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:16.871Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2022-06-08T07:00:00.000Z",
+          "traktId": 4735544
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2022-06-15T07:00:00.000Z",
+          "traktId": 5974837
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2022-06-22T07:00:00.000Z",
+          "traktId": 5974864
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2022-06-29T07:00:00.000Z",
+          "traktId": 5974887
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2022-07-06T07:00:00.000Z",
+          "traktId": 5974902
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2022-07-13T07:00:00.000Z",
+          "traktId": 5974915
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-thor-love-and-thunder",
@@ -1747,14 +3389,14 @@
       "searchYear": 2022,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 616037,
+      "imdbId": "tt10648342",
+      "traktId": 459282,
       "timelineOrder": 610,
       "timelineEra": "官方完整时间线第61位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-07-07",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1764,8 +3406,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Thor: Love and Thunder"
+      "metadataVerifiedAt": "2026-11-12T13:00:18.860Z",
+      "officialLabel": "Thor: Love and Thunder",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:18.442Z"
     },
     {
       "stableId": "mcu-ironheart-s1",
@@ -1775,14 +3419,14 @@
       "searchYear": 2025,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 114471,
+      "imdbId": "tt13623126",
+      "traktId": 170565,
       "timelineOrder": 620,
       "timelineEra": "官方完整时间线第62位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-06-25T01:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1792,8 +3436,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Ironheart"
+      "metadataVerifiedAt": "2026-11-12T13:00:18.970Z",
+      "officialLabel": "Ironheart",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:18.465Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2025-06-25T01:00:00.000Z",
+          "traktId": 5232527
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2025-06-25T01:00:00.000Z",
+          "traktId": 6047024
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2025-06-25T01:00:00.000Z",
+          "traktId": 6047025
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2025-07-02T01:00:00.000Z",
+          "traktId": 6047026
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2025-07-02T01:00:00.000Z",
+          "traktId": 6047027
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2025-07-02T01:00:00.000Z",
+          "traktId": 6047028
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-werewolf-by-night",
@@ -1803,14 +3488,14 @@
       "searchYear": 2022,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 894205,
+      "imdbId": "tt15318872",
+      "traktId": 717362,
       "timelineOrder": 630,
       "timelineEra": "官方完整时间线第63位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-10-07",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1820,8 +3505,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Werewolf By Night"
+      "metadataVerifiedAt": "2026-11-12T13:00:19.497Z",
+      "officialLabel": "Werewolf By Night",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:18.968Z"
     },
     {
       "stableId": "mcu-the-guardians-of-the-galaxy-holiday-special",
@@ -1831,14 +3518,14 @@
       "searchYear": 2022,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 774752,
+      "imdbId": "tt13623136",
+      "traktId": 612106,
       "timelineOrder": 640,
       "timelineEra": "官方完整时间线第64位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2022-11-25",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1848,8 +3535,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Guardians of the Galaxy Holiday Special"
+      "metadataVerifiedAt": "2026-11-12T13:00:20.013Z",
+      "officialLabel": "The Guardians of the Galaxy Holiday Special",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:19.494Z"
     },
     {
       "stableId": "mcu-ant-man-and-the-wasp-quantumania",
@@ -1859,14 +3548,14 @@
       "searchYear": 2023,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 640146,
+      "imdbId": "tt10954600",
+      "traktId": 478761,
       "timelineOrder": 650,
       "timelineEra": "官方完整时间线第65位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-02-17",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1876,8 +3565,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Ant-Man and the Wasp: Quantumania"
+      "metadataVerifiedAt": "2026-11-12T13:00:20.435Z",
+      "officialLabel": "Ant-Man and the Wasp: Quantumania",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:20.017Z"
     },
     {
       "stableId": "mcu-guardians-of-the-galaxy-vol-3",
@@ -1887,14 +3578,14 @@
       "searchYear": 2023,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 447365,
+      "imdbId": "tt6791350",
+      "traktId": 293990,
       "timelineOrder": 660,
       "timelineEra": "官方完整时间线第66位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-05-05",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1904,8 +3595,9 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Guardians of the Galaxy Vol. 3"
+      "metadataVerifiedAt": "2026-11-12T13:02:58.336Z",
+      "officialLabel": "Guardians of the Galaxy Vol. 3",
+      "identitySource": "Reviewed Trakt title, year and external media IDs"
     },
     {
       "stableId": "mcu-secret-invasion-s1",
@@ -1915,14 +3607,14 @@
       "searchYear": 2023,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 114472,
+      "imdbId": "tt13157618",
+      "traktId": 170566,
       "timelineOrder": 670,
       "timelineEra": "官方完整时间线第67位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-06-21T07:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1932,8 +3624,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Secret Invasion"
+      "metadataVerifiedAt": "2026-11-12T13:00:20.968Z",
+      "officialLabel": "Secret Invasion",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:20.557Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2023-06-21T07:00:00.000Z",
+          "traktId": 4933972
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2023-06-28T07:00:00.000Z",
+          "traktId": 7440038
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2023-07-05T07:00:00.000Z",
+          "traktId": 7440245
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2023-07-12T07:00:00.000Z",
+          "traktId": 7446448
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2023-07-19T07:00:00.000Z",
+          "traktId": 7440281
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2023-07-26T07:00:00.000Z",
+          "traktId": 7440302
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-the-marvels",
@@ -1943,14 +3676,14 @@
       "searchYear": 2023,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 609681,
+      "imdbId": "tt10676048",
+      "traktId": 454832,
       "timelineOrder": 680,
       "timelineEra": "官方完整时间线第68位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-11-10",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1960,8 +3693,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Marvels"
+      "metadataVerifiedAt": "2026-11-12T13:00:21.486Z",
+      "officialLabel": "The Marvels",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:21.066Z"
     },
     {
       "stableId": "mcu-loki-s2",
@@ -1971,14 +3706,14 @@
       "searchYear": 2021,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 84958,
+      "imdbId": "tt9140554",
+      "traktId": 146535,
       "timelineOrder": 690,
       "timelineEra": "官方完整时间线第69位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-10-06T01:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -1988,8 +3723,49 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Loki S2"
+      "metadataVerifiedAt": "2026-11-12T13:00:21.463Z",
+      "officialLabel": "Loki S2",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:20.958Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2023-10-06T01:00:00.000Z",
+          "traktId": 9519353
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2023-10-13T01:00:00.000Z",
+          "traktId": 9548265
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2023-10-20T01:00:00.000Z",
+          "traktId": 9548348
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2023-10-27T01:00:00.000Z",
+          "traktId": 9548405
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2023-11-03T01:00:00.000Z",
+          "traktId": 9548501
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2023-11-10T02:00:00.000Z",
+          "traktId": 9548552
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-what-if-s2",
@@ -1999,14 +3775,14 @@
       "searchYear": 2021,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 91363,
+      "imdbId": "tt10168312",
+      "traktId": 146522,
       "timelineOrder": 700,
       "timelineEra": "官方完整时间线第70位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2023-12-22T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2016,8 +3792,67 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "What If…? S2"
+      "metadataVerifiedAt": "2026-11-12T13:00:22.401Z",
+      "officialLabel": "What If…? S2",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:21.982Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2023-12-22T08:00:00.000Z",
+          "traktId": 11053140
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2023-12-23T08:00:00.000Z",
+          "traktId": 11053141
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2023-12-24T08:00:00.000Z",
+          "traktId": 11053142
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2023-12-25T08:00:00.000Z",
+          "traktId": 11053143
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2023-12-26T08:00:00.000Z",
+          "traktId": 11053144
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2023-12-27T08:00:00.000Z",
+          "traktId": 11053145
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2023-12-28T08:00:00.000Z",
+          "traktId": 11053146
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2023-12-29T08:00:00.000Z",
+          "traktId": 11053147
+        },
+        {
+          "season": 2,
+          "number": 9,
+          "firstAired": "2023-12-30T08:00:00.000Z",
+          "traktId": 11053148
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-deadpool-wolverine",
@@ -2027,14 +3862,14 @@
       "searchYear": 2024,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 533535,
+      "imdbId": "tt6263850",
+      "traktId": 395672,
       "timelineOrder": 710,
       "timelineEra": "官方完整时间线第71位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2024-07-26",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2044,8 +3879,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Deadpool & Wolverine"
+      "metadataVerifiedAt": "2026-11-12T13:00:23.062Z",
+      "officialLabel": "Deadpool & Wolverine",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:22.649Z"
     },
     {
       "stableId": "mcu-agatha-all-along-s1",
@@ -2055,14 +3892,14 @@
       "searchYear": 2024,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 138501,
+      "imdbId": "tt15571732",
+      "traktId": 191186,
       "timelineOrder": 720,
       "timelineEra": "官方完整时间线第72位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2024-09-19T01:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2072,8 +3909,67 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Agatha All Along"
+      "metadataVerifiedAt": "2026-11-12T13:00:23.407Z",
+      "officialLabel": "Agatha All Along",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:22.987Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2024-09-19T01:00:00.000Z",
+          "traktId": 5691089
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2024-09-19T01:00:00.000Z",
+          "traktId": 11870715
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2024-09-26T01:00:00.000Z",
+          "traktId": 11870716
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2024-10-03T01:00:00.000Z",
+          "traktId": 11870717
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2024-10-10T01:00:00.000Z",
+          "traktId": 11870718
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2024-10-17T01:00:00.000Z",
+          "traktId": 11870719
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2024-10-24T01:00:00.000Z",
+          "traktId": 11870720
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2024-10-31T01:00:00.000Z",
+          "traktId": 11870721
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2024-10-31T01:00:00.000Z",
+          "traktId": 11870722
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-what-if-s3",
@@ -2083,14 +3979,14 @@
       "searchYear": 2021,
       "season": 3,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 91363,
+      "imdbId": "tt10168312",
+      "traktId": 146522,
       "timelineOrder": 730,
       "timelineEra": "官方完整时间线第73位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2024-12-22T08:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2100,8 +3996,61 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "What If…? S3"
+      "metadataVerifiedAt": "2026-11-12T13:00:23.989Z",
+      "officialLabel": "What If…? S3",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:23.567Z",
+      "episodes": [
+        {
+          "season": 3,
+          "number": 1,
+          "firstAired": "2024-12-22T08:00:00.000Z",
+          "traktId": 12430586
+        },
+        {
+          "season": 3,
+          "number": 2,
+          "firstAired": "2024-12-23T08:00:00.000Z",
+          "traktId": 12431261
+        },
+        {
+          "season": 3,
+          "number": 3,
+          "firstAired": "2024-12-24T08:00:00.000Z",
+          "traktId": 12431262
+        },
+        {
+          "season": 3,
+          "number": 4,
+          "firstAired": "2024-12-25T08:00:00.000Z",
+          "traktId": 12431263
+        },
+        {
+          "season": 3,
+          "number": 5,
+          "firstAired": "2024-12-26T08:00:00.000Z",
+          "traktId": 12431264
+        },
+        {
+          "season": 3,
+          "number": 6,
+          "firstAired": "2024-12-27T08:00:00.000Z",
+          "traktId": 12431265
+        },
+        {
+          "season": 3,
+          "number": 7,
+          "firstAired": "2024-12-28T08:00:00.000Z",
+          "traktId": 12431266
+        },
+        {
+          "season": 3,
+          "number": 8,
+          "firstAired": "2024-12-29T08:00:00.000Z",
+          "traktId": 12431267
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-daredevil-born-again-s1",
@@ -2111,14 +4060,14 @@
       "searchYear": 2025,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 202555,
+      "imdbId": "tt18923754",
+      "traktId": 195845,
       "timelineOrder": 740,
       "timelineEra": "官方完整时间线第74位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-03-05T02:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2128,8 +4077,67 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Daredevil: Born Again S1"
+      "metadataVerifiedAt": "2026-11-12T13:00:24.498Z",
+      "officialLabel": "Daredevil: Born Again S1",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:24.033Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2025-03-05T02:00:00.000Z",
+          "traktId": 6417496
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2025-03-05T02:00:00.000Z",
+          "traktId": 12391599
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2025-03-12T01:00:00.000Z",
+          "traktId": 12391600
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2025-03-19T01:00:00.000Z",
+          "traktId": 12391601
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2025-03-26T01:00:00.000Z",
+          "traktId": 12391602
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2025-03-26T01:00:00.000Z",
+          "traktId": 12391603
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2025-04-02T01:00:00.000Z",
+          "traktId": 12391604
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2025-04-09T01:00:00.000Z",
+          "traktId": 12391605
+        },
+        {
+          "season": 1,
+          "number": 9,
+          "firstAired": "2025-04-16T01:00:00.000Z",
+          "traktId": 12391606
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-captain-america-brave-new-world",
@@ -2139,14 +4147,14 @@
       "searchYear": 2025,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 822119,
+      "imdbId": "tt14513804",
+      "traktId": 655031,
       "timelineOrder": 750,
       "timelineEra": "官方完整时间线第75位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-02-14",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2156,8 +4164,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Captain America: Brave New World"
+      "metadataVerifiedAt": "2026-11-12T13:00:25.278Z",
+      "officialLabel": "Captain America: Brave New World",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:24.787Z"
     },
     {
       "stableId": "mcu-thunderbolts",
@@ -2167,14 +4177,14 @@
       "searchYear": 2025,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 986056,
+      "imdbId": "tt20969586",
+      "traktId": 792299,
       "timelineOrder": 760,
       "timelineEra": "官方完整时间线第76位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-05-02",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2184,8 +4194,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Thunderbolts*"
+      "metadataVerifiedAt": "2026-11-12T13:00:26.128Z",
+      "officialLabel": "Thunderbolts*",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:25.655Z"
     },
     {
       "stableId": "mcu-the-fantastic-four-first-steps",
@@ -2195,14 +4207,14 @@
       "searchYear": 2025,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 617126,
+      "imdbId": "tt10676052",
+      "traktId": 460087,
       "timelineOrder": 770,
       "timelineEra": "官方完整时间线第77位（推荐观影位置）",
       "universe": "multiverse",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2025-07-25",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2212,8 +4224,9 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Fantastic Four: First Steps"
+      "metadataVerifiedAt": "2026-11-12T13:02:58.761Z",
+      "officialLabel": "The Fantastic Four: First Steps",
+      "identitySource": "Reviewed Trakt title, year and external media IDs"
     },
     {
       "stableId": "mcu-wonder-man-s1",
@@ -2223,14 +4236,14 @@
       "searchYear": 2026,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 198178,
+      "imdbId": "tt21066182",
+      "traktId": 196325,
       "timelineOrder": 780,
       "timelineEra": "官方完整时间线第78位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2026-01-28T02:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2240,8 +4253,61 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Wonder Man"
+      "metadataVerifiedAt": "2026-11-12T13:00:26.625Z",
+      "officialLabel": "Wonder Man",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:26.189Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 6467658
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 11164556
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 13616867
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 13616868
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 13616869
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 13616870
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 13616871
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2026-01-28T02:00:00.000Z",
+          "traktId": 13616872
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-daredevil-born-again-s2",
@@ -2251,14 +4317,14 @@
       "searchYear": 2025,
       "season": 2,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 202555,
+      "imdbId": "tt18923754",
+      "traktId": 195845,
       "timelineOrder": 790,
       "timelineEra": "官方完整时间线第79位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2026-03-25T01:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2268,8 +4334,61 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "Daredevil: Born Again S2"
+      "metadataVerifiedAt": "2026-11-12T13:00:26.733Z",
+      "officialLabel": "Daredevil: Born Again S2",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:26.309Z",
+      "episodes": [
+        {
+          "season": 2,
+          "number": 1,
+          "firstAired": "2026-03-25T01:00:00.000Z",
+          "traktId": 13705270
+        },
+        {
+          "season": 2,
+          "number": 2,
+          "firstAired": "2026-04-01T01:00:00.000Z",
+          "traktId": 13891095
+        },
+        {
+          "season": 2,
+          "number": 3,
+          "firstAired": "2026-04-01T01:00:00.000Z",
+          "traktId": 13891096
+        },
+        {
+          "season": 2,
+          "number": 4,
+          "firstAired": "2026-04-08T01:00:00.000Z",
+          "traktId": 13891098
+        },
+        {
+          "season": 2,
+          "number": 5,
+          "firstAired": "2026-04-15T01:00:00.000Z",
+          "traktId": 13891099
+        },
+        {
+          "season": 2,
+          "number": 6,
+          "firstAired": "2026-04-22T01:00:00.000Z",
+          "traktId": 13891100
+        },
+        {
+          "season": 2,
+          "number": 7,
+          "firstAired": "2026-04-29T01:00:00.000Z",
+          "traktId": 13891101
+        },
+        {
+          "season": 2,
+          "number": 8,
+          "firstAired": "2026-05-06T01:00:00.000Z",
+          "traktId": 13891102
+        }
+      ],
+      "segmentComplete": true
     },
     {
       "stableId": "mcu-the-punisher-one-last-kill",
@@ -2279,14 +4398,14 @@
       "searchYear": 2026,
       "season": null,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 1439930,
+      "imdbId": "tt36042156",
+      "traktId": 1178309,
       "timelineOrder": 800,
       "timelineEra": "官方完整时间线第80位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2026-05-12",
+      "availabilityStatus": "released",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2296,8 +4415,10 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "The Punisher: One Last Kill"
+      "metadataVerifiedAt": "2026-11-12T13:00:27.072Z",
+      "officialLabel": "The Punisher: One Last Kill",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:26.667Z"
     },
     {
       "stableId": "mcu-visionquest-s1",
@@ -2307,14 +4428,14 @@
       "searchYear": 2026,
       "season": 1,
       "episodeRange": null,
-      "tmdbId": null,
-      "imdbId": null,
-      "traktId": null,
+      "tmdbId": 213375,
+      "imdbId": "tt23112594",
+      "traktId": 199379,
       "timelineOrder": 810,
       "timelineEra": "官方完整时间线第81位（主体故事顺序）",
       "universe": "Earth-616",
-      "releaseDate": null,
-      "availabilityStatus": "pending_metadata",
+      "releaseDate": "2026-10-14T01:00:00.000Z",
+      "availabilityStatus": "available",
       "chronologySource": [
         {
           "url": "https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus",
@@ -2324,8 +4445,61 @@
         }
       ],
       "lastVerifiedAt": "2026-11-08",
-      "metadataVerifiedAt": null,
-      "officialLabel": "VisionQuest"
+      "metadataVerifiedAt": "2026-11-12T13:00:28.104Z",
+      "officialLabel": "VisionQuest",
+      "identitySource": "Trakt exact title + media type + year",
+      "identityVerifiedAt": "2026-11-12T13:00:27.604Z",
+      "episodes": [
+        {
+          "season": 1,
+          "number": 1,
+          "firstAired": "2026-10-14T01:00:00.000Z",
+          "traktId": 11636951
+        },
+        {
+          "season": 1,
+          "number": 2,
+          "firstAired": "2026-10-14T01:00:00.000Z",
+          "traktId": 13358092
+        },
+        {
+          "season": 1,
+          "number": 3,
+          "firstAired": "2026-10-21T01:00:00.000Z",
+          "traktId": 13358099
+        },
+        {
+          "season": 1,
+          "number": 4,
+          "firstAired": "2026-10-21T01:00:00.000Z",
+          "traktId": 13358107
+        },
+        {
+          "season": 1,
+          "number": 5,
+          "firstAired": "2026-10-28T01:00:00.000Z",
+          "traktId": 14067266
+        },
+        {
+          "season": 1,
+          "number": 6,
+          "firstAired": "2026-10-28T01:00:00.000Z",
+          "traktId": 14067267
+        },
+        {
+          "season": 1,
+          "number": 7,
+          "firstAired": "2026-11-04T02:00:00.000Z",
+          "traktId": 14067268
+        },
+        {
+          "season": 1,
+          "number": 8,
+          "firstAired": "2026-11-11T02:00:00.000Z",
+          "traktId": 14067269
+        }
+      ],
+      "segmentComplete": true
     }
   ]
 }
