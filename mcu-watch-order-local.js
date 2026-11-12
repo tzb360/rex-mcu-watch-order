@@ -6,7 +6,7 @@ var WidgetMetadata = {
   id: 'personal.mcu.timeline.local', title: '漫威宇宙时间线 · 本地版',
   description: '按漫威故事顺序显示下一部和下一集。时间线通过 HTTPS 更新，观看进度由 Rex 直接从 Trakt 同步。',
   author: 'Personal MCU Timeline', site: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus',
-  version: '0.2.2', requiredVersion: '0.0.1', detailCacheDuration: 60,
+  version: '0.2.3', requiredVersion: '0.0.1', detailCacheDuration: 60,
   modules: [{
     id: 'mcu-local', title: '漫威宇宙观影顺序', functionName: 'loadMcuLocal', cacheDuration: 0, requiresWebView: false,
     params: [
@@ -149,10 +149,10 @@ async function mcuLoadSeed(url, etag, force) {
   if (!mcuValidCatalog(seed)) throw new Error('时间线 JSON 格式不符合要求。');
   return { seed: seed, etag: response.headers.get('etag') };
 }
-async function mcuRefreshCatalog(url, force) {
+async function mcuRefreshCatalog(url, force, cacheOnly) {
   var previous = await mcuLocalStore.read('public-catalog');
   var cached = previous && previous.url === url ? previous : null;
-  if (!force && cached && Date.now() < cached.nextCheck) return cached;
+  if (cached && (cacheOnly || (!force && Date.now() < cached.nextCheck))) return cached;
   try {
     var remote = await mcuLoadSeed(url, cached && cached.etag, force);
     if (!remote && !cached) throw new Error('时间线服务器没有返回初始数据。');
@@ -199,7 +199,7 @@ async function mcuLocalRun(params) {
   }
   var token = await mcuLocalStore.readSecret('tokens');
   if (!token) throw new Error('请先将“操作”选择为“连接 Trakt”。');
-  var catalog = await mcuRefreshCatalog(seedUrl, action === 'catalog' && page === 1);
+  var catalog = await mcuRefreshCatalog(seedUrl, action === 'catalog' && page === 1, action === 'refresh');
   var timeline = catalog.seed;
   if (timeline.metadataStatus !== 'resolved') {
     var saved = await mcuLocalStore.read('timeline');
@@ -281,10 +281,10 @@ class Trakt {
       this.blockedUntil = Number.isFinite(seconds) && seconds > 0 ? this.now() + seconds * 1000 : Math.max(this.now() + 60000, Date.parse(retry) || 0);
       throw new RemoteError('TRAKT_RATE_LIMIT', this.blockedUntil);
     }
+    if (!response.ok) throw new RemoteError(response.status === 401 ? 'TRAKT_UNAUTHORIZED' : 'TRAKT_HTTP_' + response.status);
     let data = null;
     const text = await response.text();
     if (text) { try { data = JSON.parse(text); } catch { throw new RemoteError('TRAKT_INVALID_RESPONSE'); } }
-    if (!response.ok) throw new RemoteError(response.status === 401 ? 'TRAKT_UNAUTHORIZED' : 'TRAKT_HTTP_' + response.status);
     return { data, headers: response.headers, status: response.status };
   }
   async oauth(path, body) {
@@ -413,7 +413,7 @@ class WatchSync {
         );
         const [movies, shows] = await Promise.all([
           unchanged('movies', 'watched_at') ? old.movies : this.trakt.get('/sync/watched/movies').then(r => r.data),
-          unchanged('episodes', 'watched_at') ? old.shows : this.trakt.get('/sync/watched/shows').then(r => r.data)
+          unchanged('episodes', 'watched_at') ? old.shows : this.trakt.get('/sync/watched/shows', { extended: 'progress' }).then(r => r.data)
         ]);
         if (!Array.isArray(movies) || !Array.isArray(shows)) throw new Error('TRAKT_INVALID_RESPONSE');
         if (shows.some(s => !Array.isArray(s?.seasons) || s.seasons.some(season => !Array.isArray(season?.episodes)))) {

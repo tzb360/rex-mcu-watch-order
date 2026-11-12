@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-12.2",
+  "version": "2026-11-12.3",
   "sourcePublishedAt": "2026-10-22",
-  "updatedAt": "2026-11-12T13:11:03.039Z",
+  "updatedAt": "2026-11-12T13:14:15+00:00",
   "metadataStatus": "resolved",
   "entries": [
     {
       "stableId": "mcu-eyes-of-wakanda-s1",
-      "title": "瓦坎达之眼（动画）",
+      "title": "瓦坎达之眼",
       "originalTitle": "Eyes of Wakanda",
       "mediaType": "tv",
       "searchYear": 2025,
