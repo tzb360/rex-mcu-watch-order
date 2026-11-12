@@ -6,7 +6,7 @@ var WidgetMetadata = {
   id: 'personal.mcu.timeline.local', title: '漫威宇宙时间线 · 本地版',
   description: '按漫威故事顺序显示下一部和下一集。时间线通过 HTTPS 更新，观看进度由 Rex 直接从 Trakt 同步。',
   author: 'Personal MCU Timeline', site: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus',
-  version: '0.2.5', requiredVersion: '0.0.1', detailCacheDuration: 60,
+  version: '0.2.6', requiredVersion: '0.0.1', detailCacheDuration: 60,
   modules: [{
     id: 'mcu-local', title: '漫威宇宙观影顺序', functionName: 'loadMcuLocal', cacheDuration: 0, requiresWebView: false,
     params: [
@@ -140,8 +140,14 @@ async function mcuLoadSeed(url, etag, force) {
   var headers = {};
   if (etag) headers['If-None-Match'] = etag;
   if (force) headers['Cache-Control'] = 'no-cache';
+  var requestUrl = url;
+  if (url === MCU_SEED_URL) {
+    // Use a different URL cache key for an explicit refresh or a new polling window.
+    var revision = force ? Date.now() : Math.floor(Date.now() / (30 * 60000));
+    requestUrl += '?mcu-catalog=' + revision;
+  }
   var response, seed;
-  try { response = await mcuNativeFetch(url, { headers: headers }); }
+  try { response = await mcuNativeFetch(requestUrl, { headers: headers }); }
   catch (_) { throw new Error('时间线下载失败：Rex 无法连接数据地址。'); }
   if (response.status === 304) return null;
   if (!response.ok) throw new Error('时间线下载失败：HTTP ' + response.status + '。');
@@ -451,7 +457,7 @@ class WatchSync {
         if (shows.some(s => !Array.isArray(s?.seasons) || s.seasons.some(season => !Array.isArray(season?.episodes)))) {
           throw new Error('TRAKT_MISSING_EPISODES');
         }
-        let playback = old?.playback || [], watching = null, playbackWarning;
+        let playback = includePlayback ? old?.playback || [] : [], watching = null, playbackWarning;
         try {
           if (includePlayback && (!(unchanged('movies', 'paused_at') && unchanged('episodes', 'paused_at')) || old?.warning)) {
             playback = await this.trakt.pages('/sync/playback');
