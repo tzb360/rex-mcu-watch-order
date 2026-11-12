@@ -6,7 +6,7 @@ var WidgetMetadata = {
   id: 'personal.mcu.timeline.local', title: '漫威宇宙时间线 · 本地版',
   description: '按漫威故事顺序显示下一部和下一集。时间线通过 HTTPS 更新，观看进度由 Rex 直接从 Trakt 同步。',
   author: 'Personal MCU Timeline', site: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus',
-  version: '0.2.6', requiredVersion: '0.0.1', detailCacheDuration: 60,
+  version: '0.2.7', requiredVersion: '0.0.1', detailCacheDuration: 60,
   modules: [{
     id: 'mcu-local', title: '漫威宇宙观影顺序', functionName: 'loadMcuLocal', cacheDuration: 0, requiresWebView: false,
     params: [
@@ -138,11 +138,11 @@ function mcuValidCatalog(seed) {
 }
 async function mcuLoadSeed(url, etag, force) {
   var headers = {};
-  if (etag) headers['If-None-Match'] = etag;
+  if (etag && url !== MCU_SEED_URL) headers['If-None-Match'] = etag;
   if (force) headers['Cache-Control'] = 'no-cache';
   var requestUrl = url;
   if (url === MCU_SEED_URL) {
-    // Use a different URL cache key for an explicit refresh or a new polling window.
+    // Rex can reject a bare 304. Raw uses a fresh cache key and validates the returned version.
     var revision = force ? Date.now() : Math.floor(Date.now() / (30 * 60000));
     requestUrl += '?mcu-catalog=' + revision;
   }
